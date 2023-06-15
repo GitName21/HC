@@ -61,6 +61,8 @@ function night(){
 	
 	
 	if(mode == 'night'){
+		
+		alert('已开启深色模式')
 		document.documentElement.style.setProperty('--bg-color', "#121212")
 		document.documentElement.style.setProperty('--dark-gray', "#ffffff")
 		document.documentElement.style.setProperty('--bg-fff', "#1d1d1d")
@@ -104,7 +106,8 @@ function oo(){
 	// var mode = document.cookie.slice(5);
 	
 	localStorage.removeItem("mode");
-	var ttt = localStorage.getItem("mode");
+	// var ttt = localStorage.getItem("mode");
+	alert('已关闭深色模式')
 
 	document.documentElement.style.setProperty('--bg-color', "#ECF1F7")	
 	document.documentElement.style.setProperty('--dark-gray', "#383838")
