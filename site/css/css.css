@@ -1,5 +1,6 @@
 *{margin: 0;padding: 0;}
-a{color:inherit;text-decoration: none;}	
+a{color:inherit;text-decoration: none;}
+a:hover{color: black}	/*取消a标签在移动端点击时产生的背景色*/
 li{list-style: none;}
 html{font-size: 100%;}
 img{border: 0;display: block;margin: 0;padding: 0;}
