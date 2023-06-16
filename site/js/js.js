@@ -41,10 +41,7 @@ $(document).ready(function(){
 	});
 	
 	// 获取get图片链接
-
 	$(function () {
-
-		//方法二：
 		(function ($) {
 			$.getUrlParam = function (name) {
 				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
@@ -52,13 +49,10 @@ $(document).ready(function(){
 				if (r != null) return unescape(r[2]); return null;
 			}
 		})(jQuery);
-
-		//方法二：
-		var xx = $.getUrlParam('src');
-		
-		$(".details-main img").attr ("src",xx);
-
+		var imgsrc = $.getUrlParam('src');
+		$(".details-main img").attr ("src",imgsrc);
 	});	
+  
   
 });
 
@@ -80,15 +74,15 @@ function night(){
 	
 	if(mode == 'night'){
 		
-		document.documentElement.style.setProperty('--bg-color', "#121212")
-		document.documentElement.style.setProperty('--dark-gray', "#ffffff")
-		document.documentElement.style.setProperty('--bg-fff', "#1d1d1d")
-		document.documentElement.style.setProperty('--color000', "#ffffff")
+		document.documentElement.style.setProperty('--bg-color', "#121212");
+		document.documentElement.style.setProperty('--dark-gray', "#ffffff");
+		document.documentElement.style.setProperty('--bg-fff', "#1d1d1d");
+		document.documentElement.style.setProperty('--color000', "#ffffff");
 		
-		alert('已开启深色模式')
+		alert('已开启深色模式');
 		
-		modenight.style.setProperty('display', "none")
-		modeoo.style.setProperty('display', "block")
+		modenight.style.setProperty('display', "none");
+		modeoo.style.setProperty('display', "block");
 		
 		// var str="<span onclick='daytime()'>日间模式</span>";
 		// var x = document.getElementById("modespan");
@@ -105,15 +99,15 @@ function night(){
 var mode = localStorage.getItem("mode");
 if(mode == 'night'){
 	
-	document.getElementsByTagName("body")[0].setAttribute("style","transition:0s")
-	document.getElementsByClassName("navbar-box")[0].setAttribute("style","transition:0s")
-	document.documentElement.style.setProperty('--bg-color', "#121212")
-	document.documentElement.style.setProperty('--dark-gray', "#ffffff")
-	document.documentElement.style.setProperty('--bg-fff', "#1d1d1d")
-	document.documentElement.style.setProperty('--color000', "#ffffff")
+	document.getElementsByTagName("body")[0].setAttribute("style","transition:0s");
+	document.getElementsByClassName("navbar-box")[0].setAttribute("style","transition:0s");
+	document.documentElement.style.setProperty('--bg-color', "#121212");
+	document.documentElement.style.setProperty('--dark-gray', "#ffffff");
+	document.documentElement.style.setProperty('--bg-fff', "#1d1d1d");
+	document.documentElement.style.setProperty('--color000', "#ffffff");
 	
-	modenight.style.setProperty('display', "none")
-	modeoo.style.setProperty('display', "block")
+	modenight.style.setProperty('display', "none");
+	modeoo.style.setProperty('display', "block");
 	
 	// var str="<span onclick='daytime()'>日间模式</span>";
 	// var x = document.getElementById("modespan");
@@ -133,15 +127,15 @@ function daytime(){
 	localStorage.removeItem("mode");
 	// var ttt = localStorage.getItem("mode");
 
-	document.documentElement.style.setProperty('--bg-color', "#ECF1F7")	
-	document.documentElement.style.setProperty('--dark-gray', "#383838")
-	document.documentElement.style.setProperty('--bg-fff', "#ffffff")
-	document.documentElement.style.setProperty('--color000', "#000000")		
+	document.documentElement.style.setProperty('--bg-color', "#ECF1F7");
+	document.documentElement.style.setProperty('--dark-gray', "#383838");
+	document.documentElement.style.setProperty('--bg-fff', "#ffffff");
+	document.documentElement.style.setProperty('--color000', "#000000");
 	
-	alert('已关闭深色模式')
+	alert('已关闭深色模式');
 	
-	modenight.style.setProperty('display', "block")
-	modeoo.style.setProperty('display', "none")
+	modenight.style.setProperty('display', "block");
+	modeoo.style.setProperty('display', "none");
 	
 	// if(mode == null){
 	// 	var str="<span onclick='night()'>夜间模式</span>";
