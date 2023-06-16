@@ -101,8 +101,12 @@ function night(){
 
 }
 
+// 保持夜间模式
 var mode = localStorage.getItem("mode");
 if(mode == 'night'){
+	
+	document.getElementsByTagName("body")[0].setAttribute("style","transition:0s")
+	document.getElementsByClassName("navbar-box")[0].setAttribute("style","transition:0s")
 	document.documentElement.style.setProperty('--bg-color', "#121212")
 	document.documentElement.style.setProperty('--dark-gray', "#ffffff")
 	document.documentElement.style.setProperty('--bg-fff', "#1d1d1d")
@@ -118,7 +122,8 @@ if(mode == 'night'){
 }else{
 	
 }
-	
+
+// 关闭夜间模式
 function daytime(){
 	
 	// 利用cookie缓存一个数值在电脑
