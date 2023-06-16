@@ -82,7 +82,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	}
 .content-top-box>li{width: 65%;height: auto;}
 .content-top-box>li:last-child{width: 33%;}
-.content-top-left-title{margin-bottom: 1rem;}
+.content-top-left-title{margin-bottom: 1rem;color: var(--color000);}
 .content-top-left-banner{width: 100%;height: 12.5rem;background-color: #ffffff;border-radius: 0.625rem;overflow: hidden;}
 .content-top-left-banner>img{width: 100%;max-width: 100%;height: auto;text-align: center;}
 .content-top-right-box{
@@ -122,7 +122,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	width: 100%;
 	height: auto;
 	}
-.plane-title{width: 100%;margin: 4rem 0 1rem 0;}
+.plane-title{width: 100%;margin: 4rem 0 1rem 0;color: var(--color000);}
 .plane-box li{
 	display: flex;display: -ms-flexbox;display: -webkit-flex;display: -moz-box;
 	flex-wrap: wrap;
@@ -131,7 +131,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	}
 .plane-box>li:last-child{width: 33%;height: 32.8rem;position: relative;}
 .plane-left>div{width: 49%;background-color: #ffffff;height: auto;margin: 0 0 1rem 0;border-radius: 0.625rem;overflow: hidden;position: relative;}
-.plane-left>div:nth-of-type(3){width: 100%;height: auto;line-height: 2rem;background-color: #ECF1F7;border-radius: 0;}
+.plane-left>div:nth-of-type(3){width: 100%;height: auto;line-height: 2rem;background-color:rgba(255, 255, 255, 0);border-radius: 0;}
 .plane-left div img:not(.plane-prompt img){width: 100%;max-width: 100%;height: auto;}
 
 .plane-prompt-top{text-align: center;font-size: 0.875rem;color: #808080;display: flex;flex-wrap: wrap;justify-content: center;}
@@ -243,7 +243,6 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.content-top-box>li:last-child{width: 100%;}
 	.content-top-right-box{padding: 0.8rem 2.6%;}
 	.content-top-right-box li{width: 23%;margin-bottom: 0rem;}
-	.content-top-left-title{}
 	
 	.content-top-right-title p:last-child{display: none;}
 	.content-top-right-title{width: 40%;padding: 0 0 0 10%;}
