@@ -173,7 +173,8 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .three-ul li{border-radius: 0.625rem;overflow: hidden;background-color: #ffffff;margin: 0 0 1rem 0;}
 .three-ul li img{width: 100%;height: auto;}
 /* 笔记 */
-.note-ul{width: 90%;height: auto;background-color: #ffffff;padding: 0 5%;font-size: 0.875rem;border-radius: 0.625rem;overflow: hidden;}
+.note-ul{width: 90%;height: auto;background-color: var(--bg-fff);padding: 0 5%;font-size: 0.875rem;border-radius: 0.625rem;overflow: hidden;}
+.note-ul p:first-child{color: var(--color000);}
 .note-ul>li{margin: 2rem 0;}
 .note-ul-list{width: 100%;height: auto;display: flex;flex-wrap: wrap;justify-content: space-between;margin: 1rem 0 0 0;align-items: center;}	/*align-items: flex-start、center...高度根据内容自适应，不添加此属性所有子元素高度将保持一致,因为默认是stretch（占满整个容器的高度）*/
 .note-ul-list li:first-child{width: 30%;height:auto;border-radius: 0.625rem;overflow: hidden;}
@@ -215,6 +216,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 /* 笔记 */
 .recommend-note-ul{width: 100%;height: auto;font-size: 0.875rem;display: flex;flex-wrap: wrap;justify-content: space-between;}
 .recommend-note-ul>li{margin: 0;background-color: var(--bg-fff);width: 43.3%;overflow: hidden;border-radius: var(--radius);padding: 2rem 3%;}
+.recommend-note-ul p:first-child{color: var(--color000);}
 .recommend-note-ul-list{width: 100%;height: auto;display: flex;flex-wrap: wrap;justify-content: space-between;margin: 1rem 0 0 0;align-items: center;}	/*align-items: flex-start、center...高度根据内容自适应，不添加此属性所有子元素高度将保持一致,因为默认是stretch（占满整个容器的高度）*/
 .recommend-note-ul-list li:first-child{width: 30%;height:auto;border-radius: 0.625rem;overflow: hidden;}
 .recommend-note-ul-list li:first-child img{width: 100%;height: auto;}
