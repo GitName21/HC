@@ -80,11 +80,13 @@ function night(){
 	
 	if(mode == 'night'){
 		
-		alert('已开启深色模式')
 		document.documentElement.style.setProperty('--bg-color', "#121212")
 		document.documentElement.style.setProperty('--dark-gray', "#ffffff")
 		document.documentElement.style.setProperty('--bg-fff', "#1d1d1d")
 		document.documentElement.style.setProperty('--color000', "#ffffff")
+		
+		alert('已开启深色模式')
+		
 		modenight.style.setProperty('display', "none")
 		modeoo.style.setProperty('display', "block")
 		
@@ -117,7 +119,7 @@ if(mode == 'night'){
 	
 }
 	
-function oo(){
+function daytime(){
 	
 	// 利用cookie缓存一个数值在电脑
 	// document.cookie="mode=daytime; path=/";
@@ -125,12 +127,13 @@ function oo(){
 	
 	localStorage.removeItem("mode");
 	// var ttt = localStorage.getItem("mode");
-	alert('已关闭深色模式')
 
 	document.documentElement.style.setProperty('--bg-color', "#ECF1F7")	
 	document.documentElement.style.setProperty('--dark-gray', "#383838")
 	document.documentElement.style.setProperty('--bg-fff', "#ffffff")
 	document.documentElement.style.setProperty('--color000', "#000000")		
+	
+	alert('已关闭深色模式')
 	
 	modenight.style.setProperty('display', "block")
 	modeoo.style.setProperty('display', "none")
