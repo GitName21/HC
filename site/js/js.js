@@ -40,7 +40,25 @@ $(document).ready(function(){
 		$(".navbar-mobile-set").toggle(500);
 	});
 	
-	
+	// 获取get图片链接
+
+	$(function () {
+
+		//方法二：
+		(function ($) {
+			$.getUrlParam = function (name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r = window.location.search.substr(1).match(reg);
+				if (r != null) return unescape(r[2]); return null;
+			}
+		})(jQuery);
+
+		//方法二：
+		var xx = $.getUrlParam('src');
+		
+		$(".details-main img").attr ("src",xx);
+
+	});	
   
 });
 

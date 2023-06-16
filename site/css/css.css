@@ -223,6 +223,16 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .recommend-note-ul-list li p:last-child{color: #A6A6A6;}
 
 
+/* 平面作品详情展示 */
+.details-box{width: 100%;background-color: #383838;height: auto;padding: 2rem 0 1rem 0;}
+.details-main{width: 75rem;margin: 0 auto;}
+.details-main div{margin: 0 auto 1rem 0;}
+.details-main div:not(.details-main-content){color: var(--colorfff);}
+.details-main-content{color: var(--medium-grey);font-size: 0.875rem;}
+.details-main img{width: 100%;height: auto;}
+.label{padding: 0.1rem 0.2rem;background-color: #4FBA25;border-radius: 0.2rem;margin-left: 0.5rem;}
+.details-main div:nth-child(4){font-size: 0.75rem;}
+.details-main div:first-child{width: 100%;display: flex;flex-wrap: wrap;justify-content: center;}
 
 
 /* 超小屏幕（手机，小于 768px） */
@@ -351,7 +361,8 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.recommend-note-ul-list p:first-child{margin: 1rem 0 0 0;}
 	.recommend-note-ul-list li:last-child{width: 100%;height: auto;}
 	
-	
+	/* 平面作品详情展示 */
+	.details-main{width: 96%}
 }
 
 /* 小屏幕（平板，大于等于 768px） */
