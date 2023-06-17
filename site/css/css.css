@@ -236,6 +236,12 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .details-main div:nth-child(4){font-size: 0.75rem;}
 .details-main div:first-child{width: 100%;display: flex;flex-wrap: wrap;justify-content: center;}
 
+/* 笔记详情页 */
+.note-details-ul{display: flex;flex-wrap: wrap;justify-content: space-between;background-color: red;width: 100%;height: auto;align-content: flex-start;align-items: flex-start;}
+.note-details-ul-left{width: 65%;background-color: yellowgreen;margin: 0 0 1rem 0;}
+.note-details-ul-right{width: 33%;background-color: yellow;}
+
+
 
 /* 超小屏幕（手机，小于 768px） */
 @media (max-width: 767px) {
