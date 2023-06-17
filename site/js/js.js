@@ -73,13 +73,14 @@ function night(){
 	
 	
 	if(mode == 'night'){
-		
+		document.getElementsByTagName("body")[0].setAttribute("style","transition:var(--transitionTime05)");		
+		document.getElementsByClassName("navbar-box")[0].setAttribute("style","transition:var(--transitionTime05)");
 		document.documentElement.style.setProperty('--bg-color', "#121212");
 		document.documentElement.style.setProperty('--dark-gray', "#ffffff");
 		document.documentElement.style.setProperty('--bg-fff', "#1d1d1d");
 		document.documentElement.style.setProperty('--color000', "#ffffff");
 		
-		alert('已开启深色模式');
+		// alert('已开启深色模式');
 		
 		modenight.style.setProperty('display', "none");
 		modeoo.style.setProperty('display', "block");
@@ -113,8 +114,6 @@ if(mode == 'night'){
 	// var x = document.getElementById("modespan");
 	// x.innerHTML=str;
 	
-}else{
-	
 }
 
 // 关闭夜间模式
@@ -126,13 +125,14 @@ function daytime(){
 	
 	localStorage.removeItem("mode");
 	// var ttt = localStorage.getItem("mode");
-
+	document.getElementsByTagName("body")[0].setAttribute("style","transition:var(--transitionTime05)");
+	document.getElementsByClassName("navbar-box")[0].setAttribute("style","transition:var(--transitionTime05)");
 	document.documentElement.style.setProperty('--bg-color', "#ECF1F7");
 	document.documentElement.style.setProperty('--dark-gray', "#383838");
 	document.documentElement.style.setProperty('--bg-fff', "#ffffff");
 	document.documentElement.style.setProperty('--color000', "#000000");
 	
-	alert('已关闭深色模式');
+	// alert('已关闭深色模式');
 	
 	modenight.style.setProperty('display', "block");
 	modeoo.style.setProperty('display', "none");
@@ -144,3 +144,10 @@ function daytime(){
 	// 	alert('暂未开放')
 	// }
 }
+
+document.addEventListener("visibilitychange", function () {
+  if (!document.hidden) {  
+    // 处于当前页面
+    alert("页面切入,浏览器处于当前页面")
+  }
+});
