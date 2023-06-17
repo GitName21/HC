@@ -51,6 +51,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .navbar-left{width: 22.5rem;font-size: 0.75rem;display: flex;justify-content: center;}
 .navbar-middle{width: 75rem;}
 .navbar-right{display: flex;flex-wrap: wrap;justify-content: center;padding: 0 0 0 0;width: 22.5rem;}
+#modenight,#modeoo{display: flex;flex-wrap: wrap;justify-content: center;}
 
 .navbar-ul{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
 .navbar-ul-left{display: flex;flex-wrap: wrap;justify-content: space-between;width: 65%;align-items: center;}
@@ -111,7 +112,8 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .content-top-right-box a{display: inline-flex;}		/*如果加入A标签后，A标签下的元素没发生小flex，则可以为该A标签添加inline-flex或者flex;也就是如果要a标签跟随flex*/
 .content-top-right-title{background-color: ;width: 50%;padding: 0 0 0 10%;}
 .content-top-right-title p:first-child{font-size: 0.875rem;color: #808080;}
-.content-top-right-title p:last-child:not(.about-english){font-size: 1.125rem;font-weight: bold;}
+.content-top-right-title p:last-child:not(.about-english){font-size: 1.125rem;font-weight: bold;color: var(--color000);}
+.about-english{color: var(--color000);font-size: 1.125rem;font-weight: bold;}
 
 
 /* 平面作品 */
@@ -232,19 +234,38 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .details-main div:not(.details-main-content){color: var(--colorfff);}
 .details-main-content{color: var(--medium-grey);font-size: 0.875rem;}
 .details-main img{width: 100%;height: auto;}
-.label{padding: 0.1rem 0.2rem;background-color: #4FBA25;border-radius: 0.2rem;margin-left: 0.5rem;}
+.label{padding: 0.2rem 0.2rem;background-color: #4FBA25;border-radius: 0.2rem;margin-left: 0.5rem;color: #ffffff;}
 .details-main div:nth-child(4){font-size: 0.75rem;}
 .details-main div:first-child{width: 100%;display: flex;flex-wrap: wrap;justify-content: center;}
 
 /* 笔记详情页 */
 .note-details-ul{display: flex;flex-wrap: wrap;justify-content: space-between;width: 100%;height: auto;align-content: flex-start;align-items: flex-start;}
-.note-details-ul-left{width: 65%;background-color: yellowgreen;}
-.note-details-ul-right{width: 33%;background-color: yellow;}
+.note-details-ul-left{width: 65%;}
+.note-details-ul-right{width: 33%;}
 /* 内容 */
-.note-details-content{background-color: var(--bg-fff);border-radius: var(--radius);}
+.note-details-content{background-color: var(--bg-fff);border-radius: var(--radius);padding: 3rem;}
 .note-details-ul-tit{margin-bottom: 1rem;}
-.note-det-con-tit{border-bottom: 1px solid var(--light-grey);}
-.note-det-con{color: var(--color000);line-height:23px;}
+.note-det-con-tit{border-bottom: 1px solid #E5E5E5;align-items: center;padding: 0 0 1rem 0;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.note-det-con-tit p:first-child{font-size: 1.25rem;color: var(--color000);}
+.note-det-con-tit p:last-child{font-size: 0.75rem;margin: 1rem 0 0 0;}
+.note-det-con-tit span:first-child{color: var(--light-grey);}
+.note-det-con-tit div:last-child{width: 4.6875rem;height: 4.6875rem;border-radius: 100%;overflow: hidden;}
+.note-det-con-tit div:last-child img{width: 100%;height: auto;}
+/* 内容 */
+.note-det-con{color: var(--color000);line-height:23px;padding: 2rem 0;font-size: 0.875rem;font-size: 1rem;color: var(--light-grey);}
+.note-det-con p{margin: 0 0 1rem 0;}
+.note-det-like{border: 2px solid #2A82E4;max-width: 13rem;display: flex;flex-wrap: wrap;justify-content: center;margin: 2rem auto 5rem auto;font-size: 0.875rem;align-items: center;padding: 0.8rem 0;border-radius: 100rem;color: #2A82E4;}
+.note-det-like span{margin: 0 0.2rem;}
+.note-det-like a{display: flex;flex-wrap: wrap;align-items: center;}
+.note-det-like a img{width: 1.2rem;height: 1.2rem;margin-right: 0.2rem;}
+.note-det-rec-ul li{width: 100%;}
+/* 推荐 */
+.note-det-rec-ul>li{width: 100%;margin: 0 0 1rem 0;padding: 1.2rem;}
+.note-det-rec-ul li:first-child{width: 100%;}
+.note-det-rec-ul .recommend-note-ul-list p:first-child{margin: 1rem 0 0 0;}
+.note-det-rec-ul li:last-child{width: 100%;height: auto;}
+
+
 
 
 
@@ -377,6 +398,13 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	
 	/* 平面作品详情展示 */
 	.details-main{width: 96%}
+	
+	
+	/* 笔记详情页 */
+	.note-details-ul-left{width: 100%;}
+	.note-details-ul-right{width: 100%;}
+	.note-det-con-tit div:last-child{display: none;}
+	.note-details-content{padding: 1rem;}
 }
 
 /* 小屏幕（平板，大于等于 768px） */
@@ -437,7 +465,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	}
 	/* 遮罩 */
 	.mask{width: 100%;height: 100%;position: absolute;background-color:rgba(0, 0, 0, 0.8);z-index: 999;display: none;right: 0;backdrop-filter: blur(6px);}
-	.navbar-mobile{width: 80%;height: 100%;background-color: #ffffff;opacity: 0;}
+	.navbar-mobile{width: 80%;height: 100%;background-color:var(--bg-fff);opacity: 0;}
 	/* 移动端隐藏的菜单 */
 	.navbar-mobile-ul{width:100%;height: 100%;display: flex;flex-wrap: wrap;justify-content: center;align-content: flex-start;}
 	.navbar-mobile-ul>li{width: 80%;height: auto;display: flex;flex-wrap: wrap;justify-content: flex-start;margin:0 0 1rem 0;position: relative;}
@@ -477,7 +505,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 @media (min-width:992px) and (max-width:1200px) {
 	/* 导航引导鼠 */
 	/* 导航引导鼠标hover事件 */
-	.content-top-right-box li:hover{background-color: #ffffff;transition: all 0.2s linear;}
+	.content-top-right-box li:hover{background-color: var(--bg-fff);transition: all 0.2s linear;}
 	.content-top-right-box li:hover .content-top-right-title>p:first-child{transform: translateX(0.5rem);transition: all 0.2s linear;}
 	
 	.plane-left div:hover .plane-left-title{opacity: 1;transition: var(--transitionList);}
@@ -503,7 +531,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 @media (min-width: 1200px) {
 	/* 导航引导鼠 */
 	/* 导航引导鼠标hover事件 */
-	.content-top-right-box li:hover{background-color: #ffffff;transition: all 0.2s linear;}
+	.content-top-right-box li:hover{background-color: var(--bg-fff);transition: all 0.2s linear;}
 	.content-top-right-box li:hover .content-top-right-title>p:first-child{transform: translateX(0.5rem);transition: all 0.2s linear;}
 	
 	.plane-left div:hover .plane-left-title{opacity: 1;transition: var(--transitionList);}

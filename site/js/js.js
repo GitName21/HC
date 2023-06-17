@@ -83,7 +83,7 @@ function night(){
 		// alert('已开启深色模式');
 		
 		modenight.style.setProperty('display', "none");
-		modeoo.style.setProperty('display', "block");
+		modeoo.style.setProperty('display', "flex");
 		
 		// var str="<span onclick='daytime()'>日间模式</span>";
 		// var x = document.getElementById("modespan");
@@ -108,7 +108,7 @@ if(mode == 'night'){
 	document.documentElement.style.setProperty('--color000', "#ffffff");
 	
 	modenight.style.setProperty('display', "none");
-	modeoo.style.setProperty('display', "block");
+	modeoo.style.setProperty('display', "flex");
 	
 	// var str="<span onclick='daytime()'>日间模式</span>";
 	// var x = document.getElementById("modespan");
@@ -134,7 +134,7 @@ function daytime(){
 	
 	// alert('已关闭深色模式');
 	
-	modenight.style.setProperty('display', "block");
+	modenight.style.setProperty('display', "flex");
 	modeoo.style.setProperty('display', "none");
 	
 	// if(mode == null){
@@ -160,7 +160,7 @@ document.addEventListener("visibilitychange", function () {
 			document.documentElement.style.setProperty('--color000', "#ffffff");
 			
 			modenight.style.setProperty('display', "none");
-			modeoo.style.setProperty('display', "block");
+			modeoo.style.setProperty('display', "flex");
 			
 		};
 		if(mode != 'night'){
@@ -171,7 +171,7 @@ document.addEventListener("visibilitychange", function () {
 			document.documentElement.style.setProperty('--bg-fff', "#ffffff");
 			document.documentElement.style.setProperty('--color000', "#000000");
 			
-			modenight.style.setProperty('display', "block");
+			modenight.style.setProperty('display', "flex");
 			modeoo.style.setProperty('display', "none");
 		}
 	}
