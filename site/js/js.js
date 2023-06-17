@@ -144,10 +144,35 @@ function daytime(){
 	// 	alert('暂未开放')
 	// }
 }
-
+// 在其他标签页开启深色或浅色模式时，自动同步其它窗口
 document.addEventListener("visibilitychange", function () {
-  if (!document.hidden) {  
-    // 处于当前页面
-    alert("页面切入,浏览器处于当前页面")
-  }
+	if (!document.hidden) {  
+		// 处于当前页面
+		// 同步开启
+		var mode = localStorage.getItem("mode");
+		if(mode == 'night'){
+			
+			document.getElementsByTagName("body")[0].setAttribute("style","transition:0s");
+			document.getElementsByClassName("navbar-box")[0].setAttribute("style","transition:0s");
+			document.documentElement.style.setProperty('--bg-color', "#121212");
+			document.documentElement.style.setProperty('--dark-gray', "#ffffff");
+			document.documentElement.style.setProperty('--bg-fff', "#1d1d1d");
+			document.documentElement.style.setProperty('--color000', "#ffffff");
+			
+			modenight.style.setProperty('display', "none");
+			modeoo.style.setProperty('display', "block");
+			
+		};
+		if(mode != 'night'){
+			document.getElementsByTagName("body")[0].setAttribute("style","transition:0s");
+			document.getElementsByClassName("navbar-box")[0].setAttribute("style","transition:0s");
+			document.documentElement.style.setProperty('--bg-color', "#ECF1F7");
+			document.documentElement.style.setProperty('--dark-gray', "#383838");
+			document.documentElement.style.setProperty('--bg-fff', "#ffffff");
+			document.documentElement.style.setProperty('--color000', "#000000");
+			
+			modenight.style.setProperty('display', "block");
+			modeoo.style.setProperty('display', "none");
+		}
+	}
 });
