@@ -379,7 +379,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.plane-prompt-top img{display: none;}
 	.plane-prompt-bottom img{display: none;}
 	.plane-prompt-bottom a{width: auto;height: auto;justify-content: center;text-align: center;display: flex;flex-wrap: nowrap;}
-	.plane-prompt-bottom .plane-more{width: 100%;background-color: #0077FF;height: 2.5rem;line-height: 2.5rem;border-radius: 0.625rem;color: #ffffff;}
+	.plane-prompt-bottom .plane-more{width: 100%;background-color: #0077FF;height: 2.5rem;line-height: 2.5rem;border-radius: 0.625rem;color: #ffffff;margin: 1rem 0 0 0;}
 	
 	/* 平面作品 */
 	.plane-box{width: 100%;margin:0 auto;}
