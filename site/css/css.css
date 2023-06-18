@@ -57,8 +57,9 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .navbar-ul-left{display: flex;flex-wrap: wrap;justify-content: space-between;width: 65%;align-items: center;}
 .navbar-ul-left>div{width: 50%;position: relative;}
 .navbar-ul-left div form{justify-content: flex-end;display: flex;flex-wrap: wrap;}
-.navbar-ul-left input[name="search"]{border: 0;height: 2.5rem;width: 82%;background-color: #ECF1F7;border-radius: 0.625rem;outline: none;padding: 0 15% 0 3%;right: 0;}
-.navbar-ul-left input[name="submit"]{height: 2.5rem;width: 2.5rem;position: absolute;right: 0;border-radius: 0.625rem;border: 0;outline: none;background-color: #ECF1F7;background-image: url(../img/icon/search.png);background-size:50%;background-position: 0.6rem 0.6rem;background-repeat: no-repeat;text-align:center;cursor: pointer;}
+.navbar-ul-left input[name="search"]{border: 1px solid #a6a6a6;height: 2.5rem;width: 82%;background-color: #ECF1F7;border-radius: 0.625rem;outline: none;padding: 0 15% 0 3%;right: 0;transition:all var(--transitionTime03) linear;}
+.navbar-ul-left input[name="search"]:hover{border: 1px solid #0077FF;}
+.navbar-ul-left input[name="submit"]{height: 2.5rem;width: 2.5rem;position: absolute;right: 1px;top:1px;border-radius: 0.625rem;border: 0;outline: none;background-color: #ECF1F7;background-image: url(../img/icon/search.png);background-size:50%;background-position: 0.6rem 0.6rem;background-repeat: no-repeat;text-align:center;cursor: pointer;}
 .navbar-ul li:last-child{font-size: 0.75rem;line-height: 1.2rem;}
 
 /* logo */
@@ -264,7 +265,28 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .note-det-rec-ul li:first-child{width: 100%;}
 .note-det-rec-ul .recommend-note-ul-list p:first-child{margin: 1rem 0 0 0;}
 .note-det-rec-ul li:last-child{width: 100%;height: auto;}
-
+/* 评论 */
+.comment-box{width:100%;height:auto;}
+.comment-box-area{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;color: #2A82E4;}
+.comment-box-area div:first-child,.comment-box-area div:last-child{height: 1px;width: 15%;background-color: #2A82E4;}
+.comment-box-area div:last-child{width: 75%;}
+.comment-form{display: flex;flex-wrap: wrap;justify-content: space-between;margin: 1.5rem 0 1rem 0;}
+.comment-form div:first-child{width: 5rem;height: 5rem;border-radius: 100%;overflow: hidden;}
+.comment-form div:first-child img{width: 100%;height: 100%;}
+.comment-form div:last-child{width:86%;position: relative;}
+.comment-form div:last-child form{width:100%;display: flex;flex-wrap: wrap;flex-direction: column;}
+.comment-form input[name="comment-name"],.comment-text{background-color: var(--bg-color);height: 2.8rem;padding: 0 1rem;border-radius: var(--radius);margin-bottom: 1rem;outline: none;border: 0;}
+.comment-text{height: 6rem;resize: none;}
+.comment-box>div:last-child{height: 1px;width: 100%;background-color: #2A82E4;}
+/* 评论的内容 */
+.comment-content{display: flex;flex-wrap: wrap;justify-content: space-between;margin: 3rem 0 0 0;font-size:0.875rem ;}
+.comment-content div:first-child{width: 2.5rem ;height: 2.5rem;border-radius: 0;overflow: hidden;}
+.comment-content div:first-child img{width: 100% ;height: 100%;}
+.comment-content div:last-child{width: 92%;height: auto;}
+.comment-content div:last-child p:first-child{margin: 0 0 0.3rem 0;}
+.comment-content-name{color: #2A82E4;margin: 0 0.5rem 0rem 0;}
+.comment-content div:last-child p:last-child{color: var(--color000);}
+.comment-content div:last-child p:first-child{color: var(--light-grey);}
 
 
 
@@ -404,7 +426,12 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.note-details-ul-left{width: 100%;}
 	.note-details-ul-right{width: 100%;}
 	.note-det-con-tit div:last-child{display: none;}
-	.note-details-content{padding: 1rem;}
+	.note-details-content{padding: 1rem 1rem 3rem 1rem;}
+	/* 评论输入区域 */
+	.comment-form div:first-child{display: none;}
+	.comment-form div:last-child{width:100%;}
+	/* 评论的内容 */
+	.comment-content div:first-child{margin-bottom: 0.5rem;}
 }
 
 /* 小屏幕（平板，大于等于 768px） */
