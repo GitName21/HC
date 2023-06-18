@@ -58,7 +58,7 @@
 			</div>
 		</div>
 		<!-- 导航栏 -->
-		<div class="navbar-box">
+		<div class="navbar-box" id="scrollTop">
 			<div class="navbar-left">
 				<a href="index.html">
 					<p><img src="img/logo.png" /></p>
@@ -238,5 +238,17 @@
 			我们无法对这些网站的内容进行监管和控制，并不对这些网站的内容和隐私政策负责。</p>
 			<p>返回顶部</p>
 		</div>
+		<!-- 按钮 -->
+		<div class="fixed-btn">
+			<input type="checkbox" id="menu-checkbox">
+			<div class="nav-fixed-btn">
+				<ul class="tab-list">
+					<li class="item"><span class="item-txt"><a href="#scrollTop">回顶部</a></span></li>
+					<li class="item" onclick="night()" id="item-txt-night"><span class="item-txt">深色阅读</span></li>
+					<li class="item" onclick="daytime()" id="item-txt-daytime"><span class="item-txt">浅色阅读</span></li>
+				 </ul>
+			 </div>
+			 <label class="icon-wraper" for="menu-checkbox"></label>
+		</div>		
 	</body>
 </html>

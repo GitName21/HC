@@ -53,6 +53,17 @@ $(document).ready(function(){
 		$(".details-main img").attr ("src",imgsrc);
 	});	
   
+	// 移动端固定按钮
+	$(window).scroll(function () {
+		var top = $(window).scrollTop();//获取body滚动距离
+		var topheight = $('.navbar-box').outerHeight();//获取body滚动距离
+		if(top >= topheight){                 //如果达到某个值
+			//将元素的position属性置为absolute
+			$(".fixed-btn").show(500);
+		}else {
+			$(".fixed-btn").hide(500);
+		}
+	});
   
 });
 
@@ -61,6 +72,9 @@ $(document).ready(function(){
 
 var modenight = document.getElementById("modenight");
 var modeoo = document.getElementById("modeoo");
+var itemtxtnight = document.getElementById("item-txt-night")
+var itemtxtdaytime = document.getElementById("item-txt-daytime")
+var menucheckbox = document.getElementById("menu-checkbox")
 
 function night(){
 	
@@ -84,6 +98,9 @@ function night(){
 		
 		modenight.style.setProperty('display', "none");
 		modeoo.style.setProperty('display', "flex");
+		itemtxtnight.style.setProperty('display', "none");
+		itemtxtdaytime.style.setProperty('display', "flex");
+		menucheckbox.checked = !(menucheckbox.checked )
 		
 		// var str="<span onclick='daytime()'>日间模式</span>";
 		// var x = document.getElementById("modespan");
@@ -109,6 +126,8 @@ if(mode == 'night'){
 	
 	modenight.style.setProperty('display', "none");
 	modeoo.style.setProperty('display', "flex");
+	itemtxtnight.style.setProperty('display', "none");
+	itemtxtdaytime.style.setProperty('display', "flex");
 	
 	// var str="<span onclick='daytime()'>日间模式</span>";
 	// var x = document.getElementById("modespan");
@@ -136,6 +155,9 @@ function daytime(){
 	
 	modenight.style.setProperty('display', "flex");
 	modeoo.style.setProperty('display', "none");
+	itemtxtnight.style.setProperty('display', "flex");
+	itemtxtdaytime.style.setProperty('display', "none");
+	menucheckbox.checked = !(menucheckbox.checked )
 	
 	// if(mode == null){
 	// 	var str="<span onclick='night()'>夜间模式</span>";
@@ -173,6 +195,8 @@ document.addEventListener("visibilitychange", function () {
 			
 			modenight.style.setProperty('display', "flex");
 			modeoo.style.setProperty('display', "none");
+		itemtxtnight.style.setProperty('display', "none");
+		itemtxtdaytime.style.setProperty('display', "flex");
 		}
 	}
 });
