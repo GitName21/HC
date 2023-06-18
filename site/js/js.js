@@ -75,6 +75,7 @@ var modeoo = document.getElementById("modeoo");
 var itemtxtnight = document.getElementById("item-txt-night")
 var itemtxtdaytime = document.getElementById("item-txt-daytime")
 var menucheckbox = document.getElementById("menu-checkbox")
+// var fixedbtn = document.getElementsByClassName("fixed-btn")
 
 function night(){
 	
@@ -100,7 +101,7 @@ function night(){
 		modeoo.style.setProperty('display', "flex");
 		itemtxtnight.style.setProperty('display', "none");
 		itemtxtdaytime.style.setProperty('display', "flex");
-		menucheckbox.checked = !(menucheckbox.checked )
+		menucheckbox.checked = !(menucheckbox.checked );
 		
 		// var str="<span onclick='daytime()'>日间模式</span>";
 		// var x = document.getElementById("modespan");
