@@ -5,12 +5,19 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<title>@21---首页---每一步都是新的起点</title>
 		<link type="text/css" rel="stylesheet" href="css/css.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<script type="text/javascript" src="https://gitname21.github.io/HC/dist/wow.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/animate.css" />
 		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script type="text/javascript" src="js/js.js" defer=true></script>
 		<script>
-			new WOW().init();
+		var wow = new WOW({
+		    boxClass: 'wow',
+		    animateClass: 'animated',
+		    offset: 0,
+		    mobile: true,
+		    live: true
+		});
+		wow.init();
 		</script>
 	</head>
 	<body>
@@ -96,16 +103,16 @@
 			<!-- 顶部内容 -->
 			<ul class="content-top-box">
 				<li>
-					<div class="wow animate__animated animate__fadeInUp content-top-left-title">视觉主图</div>
-					<div class="wow animate__animated animate__fadeInUp content-top-left-banner">
+					<div class="wow bounceInUp content-top-left-title">视觉主图</div>
+					<div class="wow bounceInUp animate__fadeInUp content-top-left-banner">
 						<img src="img/banner/01.png" title="" alt="" />
 					</div>
 				</li>
 				<li>
-					<div class="wow animate__animated animate__fadeInUp content-top-left-title">导航引导</div>
-					<div class="wow animate__animated animate__fadeInUp content-top-left-banner">
+					<div class="wow bounceInUp content-top-left-title">导航引导</div>
+					<div class="wow bounceInUp content-top-left-banner">
 						<ul class="content-top-right-box">
-							<li class="wow animate__animated animate__fadeIn" data-wow-delay="0.7s">
+							<li class="wow bounceIn" data-wow-delay="0.7s">
 								<a href="graphic.html">
 									<div class="content-top-right-title">
 										<p>图文统计</p>
@@ -116,7 +123,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="wow animate__animated animate__fadeIn" data-wow-delay="0.8s">
+							<li class="wow bounceIn" data-wow-delay="0.8s">
 								<a href="#">
 									<div class="content-top-right-title">
 										<p>关于我的</p>
@@ -127,7 +134,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="wow animate__animated animate__fadeIn" data-wow-delay="1s">
+							<li class="wow bounceIn" data-wow-delay="1s">
 								<a href="#">
 									<div class="content-top-right-title">
 										<p>在线留言</p>
@@ -138,7 +145,7 @@
 									</div>
 								</a>
 							</li>
-							<li class="wow animate__animated animate__fadeIn" data-wow-delay="0.9s">
+							<li class="wow bounceIn" data-wow-delay="0.9s">
 								<a href="#">
 									<div class="content-top-right-title">
 										<p>五月廿五</p>
@@ -154,22 +161,22 @@
 				</li>
 			</ul>
 			<!-- 平面作品 -->
-			<p class="wow animate__animated animate__fadeInUp plane-title">平面作品</p>
+			<p class="wow bounceInUp plane-title">平面作品</p>
 			<ul class="plane-box">
 				<li class="plane-left">
-					<div class="wow animate__animated animate__fadeInUp">
+					<div class="wow bounceInUp">
 						<a href="details.html?src=img/plane/01.png">
 							<img src="img/plane/01.png"/>
 							<div class="plane-left-title">标题占位标题占位标题占位标题占位...</div>
 						</a>
 					</div>
-					<div class="wow animate__animated animate__fadeInUp">
+					<div class="wow bounceInUp">
 						<a href="details.html?src=img/plane/02.png">
 							<img src="img/plane/02.png" />
 							<div class="plane-left-title">标题占位标题占位标题占位标题占位...</div>
 						</a>
 					</div>
-					<div class="wow animate__animated animate__fadeInUp plane-prompt" data-wow-delay="0.5s">
+					<div class="wow bounceInUp plane-prompt" data-wow-delay="0.5s">
 						<div class="plane-prompt-top">
 							<span><img src="img/icon/prompt.png" /></span>
 							<span>请注意，本网站对素材的使用仅限于个人学习和研究，禁止进行任何商业用途。</span>
@@ -181,20 +188,20 @@
 							</a>
 						</div>
 					</div>
-					<div class="wow animate__animated animate__fadeInUp">
+					<div class="wow bounceInUp">
 						<a href="details.html?src=img/plane/03.png">
 							<img src="img/plane/03.png" />
 							<div class="plane-left-title">标题占位标题占位标题占位标题占位...</div>
 						</a>
 					</div>
-					<div class="wow animate__animated animate__fadeInUp">
+					<div class="wow bounceInUp">
 						<a href="details.html?src=img/plane/04.png">
 							<img src="img/plane/04.png" />
 							<div class="plane-left-title">标题占位标题占位标题占位标题占位...</div>
 						</a>
 					</div>
 				</li>
-				<li class="wow animate__animated animate__fadeInUp plane-right">
+				<li class="wow bounceInUp plane-right">
 					<div class="plane-right-bg">
 						<a href="details.html?src=img/plane/05.png"><img src="img/plane/05.png"></a>
 						<div class="plane-right-button"><a href="details.html?src=img/plane/05.png">点击查看</a></div>
@@ -204,28 +211,28 @@
 			<!-- 三维作品 -->
 			<div class="three-box">
 				<div>
-					<p class="wow animate__animated animate__fadeInUp plane-title">
+					<p class="wow bounceInUp plane-title">
 						<a href="graphic.html">三维作品</a>
 					</p>
 					<ul class="three-ul">
-						<li class="wow animate__animated animate__fadeInUp">
+						<li class="wow bounceInUp">
 							<a href="details.html?src=img/banner/01.png"><img src="img/banner/01.png" /></a>
 						</li>
-						<li class="wow animate__animated animate__fadeInUp">
+						<li class="wow bounceInUp">
 							<a href="details.html?src=img/plane/02.png"><img src="img/plane/02.png" /></a>
 						</li>
-						<li class="wow animate__animated animate__fadeInUp">
+						<li class="wow bounceInUp">
 							<a href="details.html?src=img/plane/03.png"><img src="img/plane/03.png" /></a>
 						</li>
 					</ul>
 				</div>
 				<!-- 新增笔记 -->
 				<div>
-					<p class="wow animate__animated animate__fadeInUp plane-title note-title">
+					<p class="wow bounceInUp plane-title note-title">
 						<a href="3">新增笔记</a>
 					</p>
 					<ul class="note-ul">
-						<li class="wow animate__animated animate__fadeInUp">
+						<li class="wow bounceInUp">
 							<p>免费字体</p>
 							<a href="note-details.html">
 								<ul class="note-ul-list">
@@ -241,7 +248,7 @@
 								</ul>								
 							</a>
 						</li>
-						<li class="wow animate__animated animate__fadeInUp">
+						<li class="wow bounceInUp">
 							<p>文案收集</p>
 							<a href="note-details.html">
 								<ul class="note-ul-list">
@@ -261,7 +268,7 @@
 				</div>
 			</div>
 			<!-- 常用应用 -->
-			<p class="wow animate__animated animate__lightSpeedInLeft plane-title app-title">
+			<p class="wow bounceInUp plane-title app-title">
 				<a href="3">常用应用</a>
 			</p>
 			<ul class="app-ul">
