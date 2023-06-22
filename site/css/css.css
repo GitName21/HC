@@ -194,6 +194,9 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .footer-box{text-align: center;margin: 15rem 0 5rem 0;color: #808080;font-size: 0.75rem;line-height: 1.2rem;padding: 0 2%;}
 .footer-box p{margin: 0 0 2rem 0;}
 
+.fixed-btn,.tab-list,#menu-checkbox{display: none;}
+
+
 /* 平面作品页 */
 /* 导航栏 */
 /* pc端菜单 */
