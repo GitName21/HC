@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>@21-在线留言</title>
+		<link type="text/css" rel="stylesheet" href="css/css.css" />
+		<link type="text/css" rel="stylesheet" href="css/animate.css" />
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script type="text/javascript" src="js/js.js" defer=true></script>
+		<script>
+		var wow = new WOW({
+		    boxClass: 'wow',
+		    animateClass: 'animated',
+		    offset: 0,
+		    mobile: true,
+		    live: true
+		});
+		wow.init();
+		</script>
+		<style>
+			.animate__animated{animation-iteration-count: 1;}
+			.wow{visibility: hidden;}
+		</style>
+	</head>
+	<body>
+		<!-- 遮罩 -->
+		<div class="mask">
+			<div class="navbar-mobile">
+				<ul class="navbar-mobile-ul">
+					<li class="navbar-mobile-hear">
+						<div><div><img src="img/headshot.png"></div></div>
+						<ul class="count-ul">
+							<li>
+								<p>12</p>
+								<p>图片</p>
+							</li>
+							<li>
+								<p>52</p>
+								<p>文章</p>
+							</li>
+							<li>
+								<p>34</p>
+								<p>留言</p>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<form action="">
+							<input type="text" name="search-mobile" placeholder="找找看，说不定会有惊喜~"/>
+							<input type="submit" name="submit-mobile" value="搜索"/>
+						</form>
+					</li>
+					<li><a href="index.html"><img src="img/icon/home.png">我的首页</a></li>
+					<li><a href="graphic.html"><img src="img/icon/graphic.png">图文统计</a></li>
+					<li><a href="#"><img src="img/icon/about.png">关于我的</a></li>
+					<li><a href="#"><img src="img/icon/message.png">在线留言</a></li>
+					<li><a href="#"><img src="img/icon/collect-1.png">收藏本站</a></li>
+					<li>
+						<a href="#"><img src="img/icon/set.png"><div class="navbar-mobile-set-btn">阅读设置</div></a>
+						<ul class="navbar-mobile-set">
+							<li onclick="daytime()">浅色模式</li>
+							<li onclick="night()">深色模式</li>
+						</ul>
+					</li>
+					<li><a href="#"><img src="img/icon/link.png">友情链接</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		<div class="navbar-box" id="scrollTop">
+			<div class="navbar-left">
+				<a href="index.html">
+					<p><img src="img/logo.png" /></p>
+					<p>每一步都是新的起点@21</p>
+				</a>
+			</div>
+			<div class="navbar-middle">
+				<ul class="navbar-ul">
+					<li class="navbar-ul-left navbar-ul-left-graphic">
+						<div><a href="index.html">我的首页</a></div>
+						<div><a href="">图稿作品</a></div>
+						<div><a href="">个人笔记</a></div>
+						<div><a href="#">关于我的</a></div>
+						<div><a href="#">在线留言</a></div>
+						<div class="search-box">
+							<form>
+								<input type="text" name="search" value="" placeholder="找找看，说不定会有惊喜~" />
+								<input type="submit" name="submit" value="" />
+							</form>
+						</div>
+					</li>
+					<li>
+						<iframe allowtransparency="true" frameborder="0" width="255" height="64" scrolling="no" src="//tianqi.2345.com/plugin/widget/index.htm?s=2&z=3&t=1&v=2&d=1&bd=0&k=&f=&ltf=009944&htf=cc0000&q=1&e=0&a=1&c=59287&w=255&h=64&align=right"></iframe>
+					</li>
+				</ul>
+			</div>
+			<div class="navbar-right">
+				<div>
+					<span><img src="img/icon/collect.png"/></span>
+					<span>收藏本站</span>
+				</div>
+				<div>
+					<span id="modenight" onclick="night()"><img src="img/icon/night.png"/>夜间模式</span>
+					<span id="modeoo" onclick="daytime()"><img src="img/icon/daytime.png"/>白天模式</span>
+				</div>
+				<div class="navbar-more"></div>
+			</div>
+		</div>
+		<!-- 网页主体 -->
+		<div class="content-box">
+			<!-- 留言 -->
+			
+		</div>	
+			<!-- 内容 -->
+		<!-- 底部 -->
+		<div class="footer-box">
+			<p>本网站所有素材仅供个人学习和研究使用，禁止进行任何商业用途。</br>
+如有侵犯您的版权，请提供涉嫌侵权素材的名称和链接、您的姓名/单位名称、联系电话、电子邮件以及版权证明材料，我们将在收到投诉后尽快核实并予以删除或断开链接。</p>
+			<p>本网站可能会链接至其他第三方网站，这些链接仅为方便用户访问而提供。</br>
+			我们无法对这些网站的内容进行监管和控制，并不对这些网站的内容和隐私政策负责。</p>
+			<p>返回顶部</p>
+		</div>
+		<!-- 按钮 -->
+		<div class="fixed-btn">
+			<input type="checkbox" id="menu-checkbox">
+			<div class="nav-fixed-btn">
+				<ul class="tab-list">
+					<li class="item"><span class="item-txt"><a href="#scrollTop">回顶部</a></span></li>
+					<li class="item" onclick="night()" id="item-txt-night"><span class="item-txt">深色阅读</span></li>
+					<li class="item" onclick="daytime()" id="item-txt-daytime"><span class="item-txt">浅色阅读</span></li>
+				 </ul>
+			 </div>
+			 <label class="icon-wraper" for="menu-checkbox"></label>
+		</div>		
+	</body>
+</html>
