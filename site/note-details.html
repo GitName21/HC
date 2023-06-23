@@ -5,13 +5,24 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 		<title>@21---笔记</title>
 		<link type="text/css" rel="stylesheet" href="css/css.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-		<script type="text/javascript" src="https://gitname21.github.io/HC/dist/wow.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/animate.css" />
 		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/wow.min.js"></script>
 		<script type="text/javascript" src="js/js.js" defer=true></script>
 		<script>
-			new WOW().init();
+		var wow = new WOW({
+		    boxClass: 'wow',
+		    animateClass: 'animated',
+		    offset: 0,
+		    mobile: true,
+		    live: true
+		});
+		wow.init();
 		</script>
+		<style>
+			.animate__animated{animation-iteration-count: 1;}
+			.wow{visibility: hidden;}
+		</style>
 	</head>
 	<body>
 		<!-- 遮罩 -->
@@ -102,14 +113,14 @@
 			<!-- 笔记 -->
 			<ul class="note-details-ul">
 				<li class="note-details-ul-left">
-					<p class="wow animate__animated animate__fadeInUp graphic-list-title note-details-ul-tit">
+					<p class="wow bounceInUp graphic-list-title note-details-ul-tit">
 						<span class="now-color-title">平面作品</span>
 						<span>/</span>
 						<span><a href="">三维作品</a></span>
 						<span>/</span>
 						<span><a href="">个人笔记</a></span>
 					</p>
-					<div class="note-details-content">
+					<div class="note-details-content wow bounceInUp">
 						<div class="note-det-con-tit">
 							<div>
 								<p>免费的商业字体：让你的设计更出众</p>
@@ -177,7 +188,7 @@
 							<div></div>
 						</div>
 						<!-- 评论列表 -->
-						<div class="comment-content">
+						<div class="wow bounceInUp comment-content">
 							<div>
 								<img src="img/headshot.png"/>
 							</div>
@@ -189,7 +200,7 @@
 								<p>少年蜘蛛逆天改命，动画二次元叫板漫画二次元，眼花缭乱的潮酷美学。热血，纯爱，好看，不过瘾，下部居然要等一年太过分了...</p>
 							</div>
 						</div>
-						<div class="comment-content">
+						<div class="wow bounceInUp comment-content">
 							<div>
 								<img src="img/headshot.png"/>
 							</div>
@@ -201,7 +212,7 @@
 								<p>少年蜘蛛逆天改命，动画二次元叫板漫画二次元，眼花缭乱的潮酷美学。热血，纯爱，好看，不过瘾，下部居然要等一年太过分了...</p>
 							</div>
 						</div>
-						<div class="comment-content">
+						<div class="wow bounceInUp comment-content">
 							<div>
 								<img src="img/headshot.png"/>
 							</div>
@@ -216,12 +227,12 @@
 					</div>
 				</li>
 				<li class="note-details-ul-right">
-					<p class="wow animate__animated animate__fadeInUp graphic-list-title note-details-ul-tit">
+					<p class="wow bounceInUp graphic-list-title note-details-ul-tit">
 						新增笔记
 					</p>
 					<!-- 复制了graphic.html的笔记模块，加新class控制 -->
 					<ul class="recommend-note-ul note-det-rec-ul">
-						<li class="wow animate__animated animate__fadeInUp">
+						<li class="wow bounceInUp">
 							<p>免费字体</p>
 							<a href="note-details.html">
 								<ul class="recommend-note-ul-list">
@@ -237,7 +248,7 @@
 								</ul>								
 							</a>
 						</li>
-						<li class="wow animate__animated animate__fadeInUp">
+						<li class="wow bounceInUp" data-wow-delay="0.2s">
 							<p>文案收集</p>
 							<a href="note-details.html">
 								<ul class="recommend-note-ul-list">
