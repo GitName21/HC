@@ -64,6 +64,29 @@ $(document).ready(function(){
 			$(".fixed-btn").hide(500);
 		}
 	});
+	
+	// 留言判断
+	// $(".comment-box").click(function(){
+	// 	 $(".comment-sub").css("background","red");
+	// 	})
+	$('.comment-text').click(function(){
+		if($('.comment-text').val() == '请输入你要留下的内容:'){
+			$('.comment-text').val('')
+			return false;
+		}
+		if($('.comment-text').val() == '内容不能为空！'){
+			$('.comment-text').val('');
+			return false;
+		}		
+	})	
+	$('.comment-text').blur(function(){
+		if ($('.comment-text').val() != '' && $('.comment-text').val() != '请输入你要留下的内容:' && $('.comment-text').val() != '内容不能为空！'){
+			$(".comment-sub").css({"background-color":"#0077FF","transition":"all 0.5s"});
+		}else{
+			$('.comment-text').val('内容不能为空！');
+			return false;
+		}
+	})
   
 });
 
