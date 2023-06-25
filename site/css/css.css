@@ -284,7 +284,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .comment-form div:last-child form{width:100%;display: flex;flex-wrap: wrap;flex-direction: column;}
 .comment-form input[name="comment-name"],.comment-text{background-color: var(--bg-color);height: 2.8rem;padding: 0 1rem;border-radius: var(--radius);margin-bottom: 1rem;outline: none;border: 0;}
 .comment-text{height: 6rem;resize: none;padding:1rem;}
-.comment-form input[name="comment-sub"]{background-color: #e6e6e6;width:100%;height:2.8rem;padding: 0 1rem;border-radius: var(--radius);margin-bottom: 1rem;outline: none;border: 0;bottom: 0;right: 1rem;color: #ffffff;}
+.comment-form input[name="comment-sub"]{background-color: #e6e6e6;width:100%;height:2.8rem;padding: 0 1rem;border-radius: var(--radius);margin-bottom: 1rem;outline: none;border: 0;bottom: 0;right: 1rem;color: #a6a6a6;}
 .comment-box>div:last-child{height: 1px;width: 100%;background-color: #2A82E4;}
 /* 评论的内容 */
 .comment-content{display: flex;flex-wrap: wrap;justify-content: space-between;margin: 3rem 0 0 0;font-size:0.875rem ;}

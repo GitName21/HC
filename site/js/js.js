@@ -80,10 +80,11 @@ $(document).ready(function(){
 		}		
 	})	
 	$('.comment-text').blur(function(){
-		if ($('.comment-text').val() != '' && $('.comment-text').val() != '请输入你要留下的内容:' && $('.comment-text').val() != '内容不能为空！'){
-			$(".comment-sub").css({"background-color":"#0077FF","transition":"all 0.5s"});
+		if ($.trim($('.comment-text').val()) != '' && $('.comment-text').val() != '请输入你要留下的内容:' && $('.comment-text').val() != '内容不能为空！'){
+			$(".comment-sub").css({"background-color":"#0077FF","transition":"all 0.5s","color":"#fff"});
 		}else{
 			$('.comment-text').val('内容不能为空！');
+			$(".comment-sub").css({"background-color":"#e6e6e6","transition":"all 0.5s","color":"#a6a6a6"});
 			return false;
 		}
 	})
