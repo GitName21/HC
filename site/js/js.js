@@ -66,9 +66,6 @@ $(document).ready(function(){
 	});
 	
 	// 留言判断
-	// $(".comment-box").click(function(){
-	// 	 $(".comment-sub").css("background","red");
-	// 	})
 	$('.comment-text').click(function(){
 		if($('.comment-text').val() == '请输入你要留下的内容:'){
 			$('.comment-text').val('')
@@ -77,16 +74,95 @@ $(document).ready(function(){
 		if($('.comment-text').val() == '内容不能为空！'){
 			$('.comment-text').val('');
 			return false;
-		}		
-	})	
-	$('.comment-text').blur(function(){
-		if ($.trim($('.comment-text').val()) != '' && $('.comment-text').val() != '请输入你要留下的内容:' && $('.comment-text').val() != '内容不能为空！'){
+		}
+	})
+	
+	// 实时检测输入情况
+	$(".comment-name").bind("input propertychange",function(event){
+		console.log($(this).val()); //调试
+		
+		if ($.trim($(this).val()) != ''){
 			$(".comment-sub").css({"background-color":"#0077FF","transition":"all 0.5s","color":"#fff"});
+			$(".hint-con span:first").html('昵称格式无误');
+			$(".hint-con:first").css({"animation":"none","color":"green","display":"flex"});
+			$(".hint-con:first img").attr('src','img/icon/yes.png');
 		}else{
-			$('.comment-text').val('内容不能为空！');
+			$(".hint-con:first").css({"display":"flex"});
 			$(".comment-sub").css({"background-color":"#e6e6e6","transition":"all 0.5s","color":"#a6a6a6"});
+			$(".hint-con span:first").html('昵称不能为空');
+			$(".hint-con:first").css({"animation":"hint-con 0.5s infinite","color":"red"});			
+			$(".hint-con:first img").attr('src','img/icon/no.png');
+			return false;
+		}				
+	})	
+	$('.comment-name').blur(function(){
+		if ($.trim($('.comment-name').val()) != ''){
+			$(".comment-sub").css({"background-color":"#0077FF","transition":"all 0.5s","color":"#fff"});
+			$(".hint-con span:first").html('昵称格式无误');
+			$(".hint-con:first").css({"animation":"none","color":"green","display":"flex"});
+			$(".hint-con:first img").attr('src','img/icon/yes.png');
+		}else{
+			$(".hint-con:first").css({"display":"flex"});
+			$(".comment-sub").css({"background-color":"#e6e6e6","transition":"all 0.5s","color":"#a6a6a6"});
+			$(".hint-con span:first").html('昵称不能为空');
+			$(".hint-con:first").css({"animation":"hint-con 0.5s infinite","color":"red"});			
+			$(".hint-con:first img").attr('src','img/icon/no.png');
 			return false;
 		}
+	})
+	// 实时检测输入情况
+	$(".comment-text").bind("input propertychange",function(event){
+		console.log($(this).val()); //调试
+
+		if ($.trim($(this).val()) != '' && $(this).val() != '请输入你要留下的内容:'){
+			$(".comment-sub").css({"background-color":"#0077FF","transition":"all 0.5s","color":"#fff"});
+			$(".hint-con span:last").html('内容格式无误');
+			$(".hint-con:last").css({"animation":"none","color":"green","display":"flex"});
+			$(".hint-con:last img").attr('src','img/icon/yes.png');
+		}else{
+			$('.comment-text').val('请输入你要留下的内容:');
+			$(".hint-con:last").css({"display":"flex"});
+			$(".comment-sub").css({"background-color":"#e6e6e6","transition":"all 0.5s","color":"#a6a6a6"});
+			$(".hint-con span:last").html('内容不能为空');
+			$(".hint-con:last").css({"animation":"hint-con 0.5s infinite","color":"red"});			
+			$(".hint-con:last img").attr('src','img/icon/no.png');
+			return false;
+		}					
+	})		
+	$('.comment-text').blur(function(){
+		if ($.trim($('.comment-text').val()) != '' && $('.comment-text').val() != '请输入你要留下的内容:'){
+			$(".comment-sub").css({"background-color":"#0077FF","transition":"all 0.5s","color":"#fff"});
+			$(".hint-con span:last").html('内容格式无误');
+			$(".hint-con:last").css({"animation":"none","color":"green","display":"flex"});
+			$(".hint-con:last img").attr('src','img/icon/yes.png');
+		}else{
+			$('.comment-text').val('请输入你要留下的内容:');
+			$(".hint-con:last").css({"display":"flex"});
+			$(".comment-sub").css({"background-color":"#e6e6e6","transition":"all 0.5s","color":"#a6a6a6"});
+			$(".hint-con span:last").html('内容不能为空');
+			$(".hint-con:last").css({"animation":"hint-con 0.5s infinite","color":"red"});			
+			$(".hint-con:last img").attr('src','img/icon/no.png');
+			return false;
+		}
+	})
+	// 提交
+	$('.comment-sub').click(function(){
+		if ($.trim($('.comment-text').val()) != '' && $('.comment-text').val() != '请输入你要留下的内容:' && $.trim($('.comment-name').val()) != ''){
+			$(".comment-form-1").submit();
+		}else{
+			if($.trim($('.comment-name').val()) == ''){
+				$(".hint-con:first").css({"display":"flex"});
+				$(".comment-sub").css({"background-color":"#e6e6e6","transition":"all 0.5s","color":"#a6a6a6"});
+				return false;
+			}
+			if($.trim($('.comment-text').val()) == '' && $('.comment-text').val() == '请输入你要留下的内容:'){
+				$('.comment-text').val('请输入你要留下的内容:');
+				$(".hint-con:last").css({"display":"flex"});
+				$(".comment-sub").css({"background-color":"#e6e6e6","transition":"all 0.5s","color":"#a6a6a6"});
+				
+				return false;				
+			}
+		}	
 	})
   
 });

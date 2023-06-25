@@ -285,6 +285,18 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .comment-form input[name="comment-name"],.comment-text{background-color: var(--bg-color);height: 2.8rem;padding: 0 1rem;border-radius: var(--radius);margin-bottom: 1rem;outline: none;border: 0;}
 .comment-text{height: 6rem;resize: none;padding:1rem;}
 .comment-form input[name="comment-sub"]{background-color: #e6e6e6;width:100%;height:2.8rem;padding: 0 1rem;border-radius: var(--radius);margin-bottom: 1rem;outline: none;border: 0;bottom: 0;right: 1rem;color: #a6a6a6;}
+.hint-con{font-size: 0.75rem;color: red;margin: 0 0 1rem 1rem;animation: hint-con 0.5s infinite;display: flex;flex-wrap: wrap;align-items: center;display: none;}
+.hint-con img{width: 0.78rem;height: 0.78rem;margin: 0.1rem 0.2rem 0 0;}
+/* 提示动画 */
+@keyframes hint-con
+{
+0% {transform: translate(0,0);}
+10% {transform: translate(1px,0px);}
+30% {transform: translate(-1px,0px);}
+60% {transform: translate(-1px,0px);}
+80% {transform: translate(1px,0px);}
+100% {transform: translate(0,0);}
+}
 .comment-box>div:last-child{height: 1px;width: 100%;background-color: #2A82E4;}
 /* 评论的内容 */
 .comment-content{display: flex;flex-wrap: wrap;justify-content: space-between;margin: 3rem 0 0 0;font-size:0.875rem ;}
