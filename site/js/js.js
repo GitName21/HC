@@ -164,6 +164,28 @@ $(document).ready(function(){
 			}
 		}	
 	})
+	
+	// 笔记详情页右边滚动到顶部后固定
+	// var boxLeft = $('.note-details-ul-right').offset().left;
+	// var boxLeft = boxLeft + 'px';
+	// var boxTop = $('.note-details-ul-right').offset().top;
+	// var boxWidth = $('.note-details-ul-right').outerWidth();
+	// var boxWidth = boxWidth + 'px';
+	// var footer = $('.footer-box').offset().top;
+	
+	// console.log(boxWidth)
+	// $(window).scroll(function(){
+	// 	console.log($(window).scrollTop())
+	// 	if($(window).scrollTop() >= boxTop){
+	// 		console.log(boxLeft)
+	// 		$('.note-details-ul-right').css({"position":"fixed","left":boxLeft,"width":boxWidth})
+	// 		$('.note-details-ul-right').animate({top:'1rem'})
+	// 	}
+	// 	if($(window).scrollTop() < boxTop){
+	// 		console.log(footer)
+	// 		$('.note-details-ul-right').css({"position":"relative","left":0,'top':0})
+	// 	}
+	// })
   
 });
 
