@@ -324,10 +324,10 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.content-top-right-title{width: 40%;padding: 0 0 0 10%;}
 	
 	/* 导航栏 */
-	.navbar-box{justify-content: space-between;padding: 1rem;}
+	.navbar-box{justify-content: space-between;padding: 1rem;width: auto;}
 	.navbar-middle{display: none;}
-	.navbar-left{width: 30%;justify-content: flex-start;}
-	.navbar-right{width: 25%;}
+	.navbar-left{width: auto;justify-content: flex-start;}
+	.navbar-right{width: auto;}
 	.navbar-right div:not(.navbar-more){display: none;}
 	.navbar-more{display: flex;}
 	.navbar-left a p:last-child{display: none;}
