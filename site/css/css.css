@@ -64,7 +64,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .navbar-ul li:last-child{font-size: 0.75rem;line-height: 1.2rem;}
 
 /* logo */
-.navbar-left a{width: 40%;display: flex;flex-wrap: wrap;justify-content: center;text-align: center;}
+.navbar-left a p{display: flex;flex-wrap: wrap;justify-content: center;}
 .navbar-left a p img{width: 2rem;height: 2rem;margin:0 0 0.2rem 0;}
 
 /* 右侧按钮 */
@@ -326,11 +326,10 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	/* 导航栏 */
 	.navbar-box{justify-content: space-between;padding: 1rem;}
 	.navbar-middle{display: none;}
-	.navbar-left{width: 30%;}
+	.navbar-left{width: 30%;justify-content: flex-start;}
 	.navbar-right{width: 20%;}
 	.navbar-right div:not(.navbar-more){display: none;}
 	.navbar-more{display: flex;}
-	.navbar-left a{width:60%;justify-content: flex-start;}
 	.navbar-left a p:last-child{display: none;}
 	.navbar-left a p img{margin:0;}
 	/* 展开按钮 */
