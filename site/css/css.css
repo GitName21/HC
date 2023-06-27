@@ -324,7 +324,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.content-top-right-title{width: 40%;padding: 0 0 0 10%;}
 	
 	/* 导航栏 */
-	.navbar-box{justify-content: space-between;}
+	.navbar-box{justify-content: space-between;padding: 1rem;}
 	.navbar-middle{display: none;}
 	.navbar-left{width: 30%;}
 	.navbar-right{width: 20%;}
