@@ -187,14 +187,8 @@ $(document).ready(function(){
 	// 	}
 	// })
 	
-	$('.notes-Announcement div').click(function(){
-		$('.notes-Announcement p').slideToggle(500,function(){
-			if($('.notes-Announcement div').text() = '展开公告'){
-				alert('')
-			}
-		});
-	})
-  
+
+	
 });
 
 

@@ -312,13 +312,14 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 /* 笔记列表页 */
 .notes-list-wrap{background-color: var(--bg-fff);border-radius: var(--radius);padding: 1rem;margin: 0 0 1rem 0;color: var(--color000);}
 .notes-list-wrap:hover{box-shadow:5px 5px 8px #dcdcdc;transition: all 0.2s;}
-.notes-list-wrap p:nth-child(2){margin: 0.5rem 0;}
-.notes-list-wrap p:first-child{border-bottom: 1px solid #e8e8e8;padding: 0 0 0.5rem 0;}
+.notes-list-wrap p:nth-child(2){margin: 0.8rem 0;color: var(--dark-gray);}
+.notes-list-wrap p:first-child{border-bottom: 1px solid #e8e8e8;padding: 0 0 0.8rem 0;}
 .notes-list-wrap p:nth-child(2),.notes-list-wrap p:last-child{font-size: 0.875rem;}
 /* 右侧信息 */
 .notes-information{width: auto;height: auto;background-color: var(--bg-fff);margin: 2rem 0 0 0;padding: 2rem 1rem;text-align: center;border-radius: var(--radius);color: var(--color000);}
 .notes-infor-hear{width: 6rem;height: 6rem;margin: 0 auto;border-radius: 50%;overflow: hidden;}
 .notes-infor-hear img{width: 100%;height: auto;}
+.notes-infor-name{margin: 1rem 0;}
 .notes-statistics{display: flex;flex-wrap: wrap;justify-content: center;}
 .notes-statistics p{line-height: 2rem;}
 .notes-statistics li{margin: 0 1rem;}
@@ -506,7 +507,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.notes-infor{margin: 0;}
 	.notes-Announcement{margin-bottom: 2rem;}
 	.notes-infor{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
-	.notes-infor div:nth-child(2){display: none;}
+	.notes-infor-name{display: none;}
 	.notes-infor-hear{order: 2;margin: 0;width: 4rem;height: 4rem;margin-right: 1rem;}
 	.notes-statistics li{margin: 0 1rem;}
 	
