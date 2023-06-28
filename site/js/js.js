@@ -186,6 +186,14 @@ $(document).ready(function(){
 	// 		$('.note-details-ul-right').css({"position":"relative","left":0,'top':0})
 	// 	}
 	// })
+	
+	$('.notes-Announcement div').click(function(){
+		$('.notes-Announcement p').slideToggle(500,function(){
+			if($('.notes-Announcement div').text() = '展开公告'){
+				alert('')
+			}
+		});
+	})
   
 });
 

@@ -503,8 +503,12 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	
 	/* 笔记列表页 */
 	.notes-infor-box{order: -1;margin-top: 0;}
-	.notes-information:first-child{margin: 0;}
+	.notes-infor{margin: 0;}
 	.notes-Announcement{margin-bottom: 2rem;}
+	.notes-infor{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
+	.notes-infor div:nth-child(2){display: none;}
+	.notes-infor-hear{order: 2;margin: 0;width: 5rem;height: 5rem;margin-right: 2rem;}
+	.notes-statistics li{margin: 0 2rem;}
 	
 }
 
