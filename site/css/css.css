@@ -501,6 +501,10 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.fixed-btn .nav-fixed-btn .tab-list .item:nth-child(4) .item-txt {transition-delay: .0s;}
 	#menu-checkbox,#item-txt-daytime{display: none;}
 	
+	/* 笔记列表页 */
+	.notes-infor-box{order: -1;margin-top: 0;}
+	.notes-information:first-child{margin: 0;}
+	.notes-Announcement{margin-bottom: 2rem;}
 	
 }
 
