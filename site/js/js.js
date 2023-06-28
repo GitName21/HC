@@ -187,7 +187,76 @@ $(document).ready(function(){
 	// 	}
 	// })
 	
-
+	// for循环制作数字递增
+	// function num(){
+	// 	var arr = [];
+	// 	$('.notes-statistics p:last-child').each(function(){
+	// 		var num = $(this).text();
+	// 		arr.push(num);
+	// 	});
+		
+	// 	var lengthP = $(".notes-statistics p:last-child").length;
+		
+	// 	for(var i=0;i<lengthP;i++){
+				
+	// 		for(var a=0;a<arr[i];a++){
+	// 			console.log(a)
+	// 		}
+	// 		console.log(arr[i])
+	// 	}
+		
+	// 	console.log(arr[0])
+	// }
+	// mytime = setInterval(num,2000);
+	
+	// animate制作数字递增
+	var one = $('.notes-statistics li:first-child p:last-child').text();
+	// var one =Number(one)+1;
+	var two = $('.notes-statistics li:nth-child(2) p:last-child').text();
+	// var two =Number(two)+1;
+	var three = $('.notes-statistics li:last-child p:last-child').text();
+	// var three =Number(three)+1;
+	
+	$({
+		countNum:0
+		}).animate({
+			countNum:one
+		},{
+			duration:3000,
+			easing:"linear",
+			step:function(){
+				$('.notes-statistics li:first-child p:last-child').text(Math.floor(this.countNum));
+			},complete:function(){
+				$('.notes-statistics li:first-child p:last-child').text(this.countNum)
+			}
+		});
+	$({
+		countNum:0
+		}).animate({
+			countNum:two
+		},{
+			duration:3000,
+			easing:"linear",
+			step:function(){
+				$('.notes-statistics li:nth-child(2) p:last-child').text(Math.floor(this.countNum));
+			},complete:function(){
+				$('.notes-statistics li:nth-child(2) p:last-child').text(this.countNum)
+			}
+		});
+	$({
+		countNum:0
+		}).animate({
+			countNum:three
+		},{
+			duration:3000,
+			easing:"linear",
+			step:function(){
+				$('.notes-statistics li:last-child p:last-child').text(Math.floor(this.countNum));
+			},complete:function(){
+				$('.notes-statistics li:last-child p:last-child').text(this.countNum)
+			}
+		});
+	
 	
 });
 
