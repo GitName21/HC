@@ -59,9 +59,9 @@ $(document).ready(function(){
 		var topheight = $('.navbar-box').outerHeight();//获取body滚动距离
 		if(top >= topheight){                 //如果达到某个值
 			//将元素的position属性置为absolute
-			// $(".fixed-btn").show(500);
+			$(".mode-button").show(300);
 		}else {
-			// $(".fixed-btn").hide(500);
+			$(".mode-button").hide(300);
 		}
 	});
 	
