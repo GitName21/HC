@@ -463,6 +463,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	
 	/* 平面作品详情展示 */
 	.details-main{width: 96%}
+	.detailsWindow{display: flex;position: absolute;width: 100%;height: 100%;background-color: yellow;color: red;}
 	
 	
 	/* 笔记详情页 */

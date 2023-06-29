@@ -257,7 +257,14 @@ $(document).ready(function(){
 			}
 		});
 	
-	
+	// 设计作品页移动端点击全屏
+	// function details(){
+	// 	var detailsWindow = "<ul id='ee'><li>图</li><li>关</li></ul>";
+	// 	$('#ee').css({"background-color":"yellow"})
+	// 	$(document.body).append(detailsWindow);
+	// 	console.log(detailsWindow)
+	// }
+	// details();
 });
 
 
