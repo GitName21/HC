@@ -282,16 +282,13 @@
 			<p>返回顶部</p>
 		</div>
 		<!-- 按钮 -->
-		<div class="fixed-btn">
-			<input type="checkbox" id="menu-checkbox">
-			<div class="nav-fixed-btn">
-				<ul class="tab-list">
-					<li class="item"><span class="item-txt"><a href="#scrollTop">回顶部</a></span></li>
-					<li class="item" onclick="night()" id="item-txt-night"><span class="item-txt">深色阅读</span></li>
-					<li class="item" onclick="daytime()" id="item-txt-daytime"><span class="item-txt">浅色阅读</span></li>
-				 </ul>
-			 </div>
-			 <label class="icon-wraper" for="menu-checkbox"></label>
-		</div>		
+		<div class="mode-button">
+			<div id="mode-button-1" onclick="daytime()">
+				<img src="img/icon/night-1.png"/>
+			</div>
+			<div id="mode-button-2" onclick="night()">
+				<img src="img/icon/daytime.png"/>
+			</div>
+		</div>	
 	</body>
 </html>
