@@ -194,12 +194,13 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 
 /* 底部 */
 .footer-box{text-align: center;margin: 15rem 0 0 0;color: #808080;font-size: 0.75rem;line-height: 1.5rem;padding: 2% 0%;background-color: var(--bg-fff);}
-.footer-box p{margin: 1rem 0 1rem 0;}
+.footer-box p{margin: 1rem 0 1rem 0;padding: 0 5%;}
 .footer-but{display: flex;flex-wrap: wrap;justify-content: center;}
 .footer-but li{border-radius: 50%;border: 1px solid #000;width: 3rem;height: 3rem;margin: 0 1rem;overflow: hidden;align-items: center;display: flex;justify-content: center;cursor: pointer;transition: all .3s;}
 .footer-but li img{width: 70%;height: 70%;}
 .footer-but li:hover{background-color: #0077ff;border: #0077ff 1px solid;}
 .footer-but li:hover img{filter: invert(100%);}
+.footer-a{color: #0077ff}
 
 /* 天气层 */
 .date-content{background-color: red;position: absolute;z-index: 999;top:0%;left: 10%;}
@@ -454,7 +455,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.app-ul{display: none;}
 	
 	/* 底部 */
-	.footer-box{margin: 5rem 0 0 0;}
+	.footer-box{margin: 5rem 0 0 0;line-height: 1.2rem;}
 	
 	/* 平面作品页 */
 	/* 平面作品列表 */
