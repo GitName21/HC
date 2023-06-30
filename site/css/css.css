@@ -69,7 +69,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .navbar-left a p img{width: 2rem;height: 2rem;margin:0 0 0.2rem 0;}
 
 /* 右侧按钮 */
-.navbar-right div:not(.navbar-more){margin: 0;width: auto;margin: 0 1rem;display: flex;flex-wrap: wrap;align-items: center;cursor: pointer;}
+.navbar-right>div:not(.navbar-more){margin: 0;width: auto;margin: 0 1rem;display: flex;flex-wrap: wrap;align-items: center;cursor: pointer;}
 .navbar-right div img{width: 1rem;height: 1rem;margin: 0.2rem 0.3rem 0 0;}
 #modeoo{display: none;}
 /* 移动端展开按钮 */
@@ -358,14 +358,15 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	.navbar-middle{display: none;}
 	.navbar-left{width: auto;justify-content: flex-start;}
 	.navbar-right{width: auto;}
-	.navbar-right div:not(.navbar-more){display: none;}
+	.navbar-right>div:not(.navbar-more){display: none;}
 	.navbar-more{display: flex;}
 	.navbar-left a p:last-child{display: none;}
 	.navbar-left a p img{margin:0;}
 	/* 展开按钮 */
-	.navbar-more{width: 1.8rem;height: 1rem;position: relative;z-index: 9999;}
-	.navbar-more::before,.navbar-more::after{background-color: #A6A6A6;width: 100%;height: 0.2rem;content: '';position: absolute;border-radius: 0.1rem;}
+	.navbar-more{width: 1.5rem;height: 1.3rem;position: relative;z-index: 9999;background-color: ;}
+	.navbar-more::before,.navbar-more::after,.navbar-more div{background-color: #A6A6A6;width: 100%;height: 0.1rem;content: '';position: absolute;border-radius: 0.1rem;}
 	.navbar-more::after{bottom: 0;}
+	.navbar-more div{top:44%;}
 	
 	/* 点击关闭动效样式定义 */
 	.navbar-open::before{
@@ -373,14 +374,14 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 		transition: all 0.3s;
 		transform: rotate(45deg);
 		transform-origin:center;
-		bottom: 0.4rem;
+		bottom: 0.7rem;
 	}
 	.navbar-open::after{
 		background-color: #0077FF;
 		transition: all 0.3s;
 		transform: rotate(-45deg);
 		transform-origin:center;
-		bottom: 0.4rem;
+		bottom: 0.7rem;
 	}
 	.navbar-close::before{
 		background-color: #A6A6A6;

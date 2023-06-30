@@ -8,6 +8,7 @@ $(document).ready(function(){
 		if($(".navbar-more").is(".navbar-open")){
 			$(".navbar-more").removeClass("navbar-open");
 			// $(".navbar-more").addClass("navbar-close");
+			$('.navbar-more div').show();
 			// 取消遮罩
 			$(".mask").hide(200,function(){
 				$(".navbar-mobile").animate({opacity:'0'},200)
@@ -15,6 +16,7 @@ $(document).ready(function(){
 			$("body").css({"overflow":"scroll"});
 		}else{
 			$(".navbar-more").addClass("navbar-open");
+			$('.navbar-more div').hide();
 			// 打开遮罩
 			$(".mask").show(200,function(){
 				$(".navbar-mobile").animate({opacity:'1'},200)
