@@ -385,6 +385,9 @@ document.addEventListener("visibilitychange", function () {
 			
 			modenight.style.setProperty('display', "none");
 			modeoo.style.setProperty('display', "flex");
+			// 新版本两个按钮
+			night1.style.setProperty('display', "flex");
+			daytime2.style.setProperty('display', "none");
 			
 		};
 		if(mode != 'night'){
