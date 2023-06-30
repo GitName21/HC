@@ -267,6 +267,12 @@ $(document).ready(function(){
 	// 	console.log(detailsWindow)
 	// }
 	// details();
+	
+	// 回滚顶部
+	$('.footer-but li:first-child').click(function(){
+		$("html,body").finish().animate({"scrollTop":"0px"},900);
+	});
+	
 });
 
 
