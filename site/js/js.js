@@ -273,7 +273,50 @@ $(document).ready(function(){
 		$("html,body").finish().animate({"scrollTop":"0px"},900);
 	});
 	
+	// 定义分享弹窗
+	function alertShare(shareTYPE){
+		$('.global-Mask').fadeIn(300,function(){
+			var top = $(document).scrollTop();
+			$(document).on('scroll.unable',function (e) {
+				$(document).scrollTop(top);
+			})
+		});
+	}
+	// 定义关闭分享弹窗
+	function closeShare(){
+		$('.global-Mask').fadeOut(300,function(){
+			$(document).unbind("scroll.unable"); 
+		});		
+	}
+	$('.footer-but>li:last-child').click(function(){
+		alertShare();
+		$('.alert-box').css({'display':'flex'});
+		$('.alert-box').fadeIn(200);
+		$('.alert-box li:nth-child(2)').html(window.location.href);
+		$('.alert-box li:nth-child(3)').html($(document).attr('title'));
+	})
+	$('.global-Mask').click(function(){
+		closeShare();
+		$('.alert-box').fadeOut(200);
+	})
+	
+	// 弹窗实时居中
+	function center(){
+		var shareWidth = $(".alert-box").innerWidth();
+		var shareHeight = $(".alert-box").innerHeight();
+		var x = ($(window).width()-shareWidth)/2;//使用$(window).width()获得显示器的宽，并算出对应的Div离左边的距离
+		var y = ($(window).height()-shareHeight)/2;//使用$(window).height()获得显示器的高，并算出相应的Div离上边的距离
+		$(".alert-box").css("top",y).css("left",x);
+	}
+	// 弹窗居中
+	center();
+	$(window).resize(function(){
+		center();
+	})
+	
 });
+
+
 
 
 // 开启夜间模式
