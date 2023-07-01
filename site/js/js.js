@@ -13,7 +13,7 @@ $(document).ready(function(){
 			$(".mask").hide(200,function(){
 				$(".navbar-mobile").animate({opacity:'0'},200)
 			});
-			$("body").css({"overflow":"scroll"});
+			$(document).unbind("scroll.unable"); 
 		}else{
 			$(".navbar-more").addClass("navbar-open");
 			$('.navbar-more div').hide();
@@ -21,7 +21,11 @@ $(document).ready(function(){
 			$(".mask").show(200,function(){
 				$(".navbar-mobile").animate({opacity:'1'},200)
 			});
-			$("body").css({"overflow":"hidden"});
+			var top = $(document).scrollTop();
+			// 禁止窗口滚动
+			$(document).on('scroll.unable',function (e) {
+				$(document).scrollTop(top);
+			})
 		};
 		
 	});
@@ -30,7 +34,7 @@ $(document).ready(function(){
 	$(window).resize(function(){
 		var win_Width = $(document).width();
 		if(win_Width >= "768"){
-			$("body").css({"overflow":"scroll"});
+			$(document).unbind("scroll.unable"); 
 			$(".navbar-more").removeClass("navbar-open");
 			// 取消遮罩
 			$(".mask").hide(200);			
