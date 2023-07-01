@@ -279,7 +279,7 @@ $(document).ready(function(){
 	
 	// 定义分享弹窗
 	function alertShare(shareTYPE){
-		$('.global-Mask').fadeIn(300,function(){
+		$('.global-Mask').fadeIn(200,function(){
 			var top = $(document).scrollTop();
 			$(document).on('scroll.unable',function (e) {
 				$(document).scrollTop(top);
@@ -288,21 +288,47 @@ $(document).ready(function(){
 	}
 	// 定义关闭分享弹窗
 	function closeShare(){
-		$('.global-Mask').fadeOut(300,function(){
+		$('.global-Mask').fadeOut(200,function(){
 			$(document).unbind("scroll.unable"); 
 		});		
 	}
 	$('.footer-but>li:last-child').click(function(){
 		alertShare();
-		$('.alert-box').css({'display':'flex'});
-		$('.alert-box').fadeIn(200);
-		$('.alert-box li:nth-child(2)').html(window.location.href);
-		$('.alert-box li:nth-child(3)').html($(document).attr('title'));
+		$('.alert-box').fadeIn(500);
+		$('.alert-box li:nth-child(2) p:first-child').html(window.location.href);
+		$('.alert-box li:nth-child(2) p:last-child').html($(document).attr('title'));
+	})
+	// 粘贴
+	$('.alert-share-go').click(function(){
+		// 开始复制内容
+		var str = '快来看你的好友给你分享了：' + window.location.href + '  ' + $(document).attr('title') + '          来自————来自21号博客';
+		var $temp = $('<input>');
+		$('body').append($temp);
+		$temp.val(str).select();
+		document.execCommand('copy');
+		$temp.remove();
+		
+		// 提示复制成功
+		$('.alert-share-go span').animate({opacity:"1",bottom:"3rem",fontSize:'1.5rem'},500);
+		
+		// 关闭弹窗
+		closeShare();
+		$('.alert-box').fadeOut(800,function(){
+			// 隐藏提示复制成功
+			$('.alert-share-go span').animate({opacity:"0",bottom:"1rem",fontSize:'1rem'},500);
+		});
+		
+	})
+	// 取消分享
+	$('.alert-share-cancel').click(function(){
+		closeShare();
+		$('.alert-box').fadeOut(500);
 	})
 	$('.global-Mask').click(function(){
 		closeShare();
-		$('.alert-box').fadeOut(200);
+		$('.alert-box').fadeOut(500);
 	})
+	
 	
 	// 弹窗实时居中
 	function center(){
