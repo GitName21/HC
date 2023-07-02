@@ -374,15 +374,28 @@ $(document).ready(function(){
 		   if($(window).width() < 767){
 			   $('body').css({"overflow":"hidden"})
 		   }
-		   // if(realWidth > $(window).width()){
+		   // 判断如果图片为长图,并且比屏幕长,则执行
+		   if(realHeight > realWidth && realHeight > $(window).height()){var imgMax = $('.img-full-screen').outerHeight();
+				// 获取父元素下所有元素加起来的高度
+			   // var imgMax = $('.img-full-screen img').outerHeight();
+			   // var divTitleMax = $('.img-full-screen div div:first-child').outerHeight();
+			   // var imgContentMax = $('.img-full-screen div div:last-child').outerHeight() + 150;
+			   // 获取屏幕卷去的高度,然后赋给父元素进行定位
+			   $('.img-full-screen').css({"align-items":"flex-start","top":$(document).scrollTop()})
+			   $('.img-full-screen div div:first-child').css({"margin":"1rem 0 0 0"})
+			   $('.img-full-screen div div:last-child').css({"padding":"1rem 0 2rem 0"})
+			   $('body').css({"overflow":"hidden"})
+			   $('.img-full-screen').css({"overflow":"scroll"})
+			   // 点击时,滚轴位置恢复到顶部
+			   $('.img-full-screen').scrollTop(0)
 			   
-		   // }else{
-			  //  
-		   // }
+		   }else{
+			   $('body').css({"overflow":"hidden"})
+		   }
 		});
 	});
 	// 关闭
-	$('.img-full-screen-close').click(function(){
+	$('.img-full-screen-close span').click(function(){
 		$('.img-full-screen').fadeOut(0)
 		$('body').css({"overflow":"scroll"})
 	})

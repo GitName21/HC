@@ -252,7 +252,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .details-main div{margin: 0 auto 1rem 0;}
 .details-main div:not(.details-main-content){color: var(--colorfff);}
 .details-main-content{color: var(--medium-grey);font-size: 0.875rem;}
-.details-main img{width: 100%;height: auto;}
+.details-main img{max-width: 100%;height: auto;}
 .label{padding: 0.2rem 0.2rem;background-color: #4FBA25;border-radius: 0.2rem;margin-left: 0.5rem;color: #ffffff;}
 .details-main div:nth-child(4){font-size: 0.75rem;}
 .details-main div:first-child{width: 100%;display: flex;flex-wrap: wrap;justify-content: center;}
@@ -538,6 +538,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	
 	/* 图片全屏 */
 	.img-full-screen div{width: 100%;max-height: 90%;}
+	.img-full-screen-close span{width: 2rem;height: 2rem;}
 	
 }
 
