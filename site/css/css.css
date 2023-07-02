@@ -217,6 +217,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 /* pc端菜单 */
 .navbar-ul-left-graphic{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;position: relative;}
 .navbar-ul-left-hint{position: absolute;width: 4rem;height: 0.2rem;left: 0;bottom: -1.9rem;background-color: var(--main-color);border-radius: 20px;transition: all 0.3s ease;}
+.navbar-ul-left-index .navbar-ul-left-hint{bottom: -2.4rem;}
 .navbar-ul-left-graphic div:not(.search-box){width: 10%;}
 .search-box{display: flex;flex-wrap: nowrap;justify-content: flex-end;}
 .search-box form{width: 70%;}
