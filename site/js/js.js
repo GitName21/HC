@@ -280,6 +280,7 @@ $(document).ready(function(){
 	// 定义分享弹窗
 	function alertShare(shareTYPE){
 		$('.global-Mask').fadeIn(200,function(){
+			// 禁止屏幕滚动
 			var top = $(document).scrollTop();
 			$(document).on('scroll.unable',function (e) {
 				$(document).scrollTop(top);
@@ -289,6 +290,7 @@ $(document).ready(function(){
 	// 定义关闭分享弹窗
 	function closeShare(){
 		$('.global-Mask').fadeOut(200,function(){
+			// 屏幕滚动
 			$(document).unbind("scroll.unable"); 
 		});		
 	}
@@ -342,6 +344,44 @@ $(document).ready(function(){
 	center();
 	$(window).resize(function(){
 		center();
+	})
+	
+	
+	// 图片全屏观看
+	$('.details-main div:first-child img').click(function(){
+		
+		$('.img-full-screen').fadeIn(500)
+		$('.img-full-screen').css({"display":"flex"})
+		
+		// 获取图片路径
+		var ImgSrc = $(this).attr('src');
+		$('.img-full-screen>div img').attr('src', ImgSrc);
+		
+		var img = $(this);
+		var realWidth;//真实的宽度
+		var realHeight;//真实的高度
+			
+		$("<img/>").attr("src", $(img).attr("src")).load(function() {
+			/*
+			  如果要获取图片的真实的宽度和高度有三点必须注意
+			  1、需要创建一个image对象：如这里的$("<img/>")
+			  2、指定图片的src路径
+			  3、一定要在图片加载完成后执行如.load()函数里执行
+			 */
+			realWidth = this.width;
+			realHeight = this.height;
+		   
+		   if(realWidth > $(window).width()){
+			   
+		   }else{
+			   $('body').css({"overflow":"hidden"})
+		   }
+		});
+	});
+	// 关闭
+	$('.img-full-screen-close').click(function(){
+		$('.img-full-screen').fadeOut(0)
+		$('body').css({"overflow":"scroll"})
 	})
 	
 });
