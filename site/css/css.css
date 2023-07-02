@@ -218,7 +218,8 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .alert-box{width: 40rem;height: auto;background-color: var(--bg-fff);z-index: 99;border-radius: 0.625rem;display: none;position: fixed;z-index: 99;top: 0;left: 0;overflow: hidden;}
 .alert-share{width: 100%;}
 .alert-share>li{width: auto;height: auto;padding: 1rem;}
-.alert-share>li:first-child{color: var(--color000);}
+.alert-share>li:first-child{color: var(--color000);display: flex;flex-wrap: nowrap;align-items: center;justify-content: flex-start;background-color: ;}
+.alert-share>li:first-child span:first-child{margin: 0.375rem 0.5rem 0 0;}
 .alert-share-cancel{color: var(--light-grey);}
 .alert-share>li:last-child{display: flex;flex-wrap: wrap;justify-content: space-between;text-align: center;}
 .alert-share>li:last-child div{width: 50%;cursor: pointer;position: relative;}
