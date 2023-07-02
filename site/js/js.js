@@ -371,11 +371,14 @@ $(document).ready(function(){
 			realWidth = this.width;
 			realHeight = this.height;
 		   
-		   if(realWidth > $(window).width()){
-			   
-		   }else{
+		   if($(window).width() < 767){
 			   $('body').css({"overflow":"hidden"})
 		   }
+		   // if(realWidth > $(window).width()){
+			   
+		   // }else{
+			  //  
+		   // }
 		});
 	});
 	// 关闭
