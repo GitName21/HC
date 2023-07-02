@@ -434,6 +434,11 @@ $(document).ready(function(){
 		
 		$('.navbar-ul-left-hint').css({"left":distance*eq+'px'})
 	})
+	// 导航栏鼠标离开
+	$('.navbar-ul-left div:not(.search-box) a').mouseout(function(){
+		
+		$('.navbar-ul-left-hint').css({"left":distance*Number_eq+'px'})
+	})
 	
 	
 });
@@ -480,8 +485,6 @@ function night(){
 		// var x = document.getElementById("modespan");
 		// x.innerHTML=str;
 				
-	}else{
-		
 	}
 
 
