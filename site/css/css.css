@@ -335,12 +335,23 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .notes-statistics{display: flex;flex-wrap: wrap;justify-content: center;}
 .notes-statistics p{line-height: 2rem;}
 .notes-statistics li{margin: 0 1rem;}
-.notes-Announcement{margin-top: 1rem;}
+.notes-Announcement,.notes-label{margin-top: 1rem;}
 .notes-Announcement p:first-child{margin-bottom: 1rem;}
 .notes-Announcement p:nth-child(2){font-size: 0.875rem;line-height: 1.5rem;}
 .notes-Announcement p:last-child{background-color: var(--bg-color);margin-top: 1rem;color: var(--main-color);}
 .notes-Announcement p:last-child:hover{background-color: var(--main-color);color: #fff;transition: all 0.2s;}
 .notes-Announcement p:last-child a{width: inherit;height: inherit;display: block;padding: 1rem 0;}
+/* 标签 */
+.notes-label{text-align: left;display: flex;flex-wrap: wrap;}
+.notes-label p{margin: 0 0 1rem 0;width: 100%;}
+.notes-label div{padding: 0.2rem 0.8rem;border-radius:2rem;color: #fff;font-size: 0.75rem;margin: 0 0.5rem 0.5rem 0;}
+/* 颜色 */
+.red{background-color: #ff8f8f;}
+.green{background-color: #6ab672;}
+.yellow{background-color: #eeba1d;}
+.blue{background-color: #3888ff;}
+.light-yellow{background-color: #eabd74;}
+.purple{background-color: #d19bff;}
 
 
 /* 全局遮罩 */
@@ -532,7 +543,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	/* 笔记列表页 */
 	.notes-infor-box{order: -1;margin-top: 0;}
 	.notes-infor{margin: 0;}
-	.notes-Announcement{margin-bottom: 2rem;}
+	.notes-label{margin-bottom: 2rem;}
 	.notes-infor{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
 	.notes-infor-name{display: none;}
 	.notes-infor-hear{order: 2;margin: 0;width: 4rem;height: 4rem;margin-right: 1rem;}
