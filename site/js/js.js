@@ -350,6 +350,7 @@ $(document).ready(function(){
 	// 图片全屏观看
 	$('.details-main div:first-child img').click(function(){
 		
+		$('.img-full-screen').css({"top":$(document).scrollTop()})
 		$('.img-full-screen').fadeIn(500)
 		$('.img-full-screen').css({"display":"flex"})
 		
