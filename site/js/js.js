@@ -297,8 +297,8 @@ $(document).ready(function(){
 	$('.footer-but>li:last-child').click(function(){
 		alertShare();
 		$('.alert-box').fadeIn(500);
-		$('.alert-box li:nth-child(2) p:first-child').html(window.location.href);
-		$('.alert-box li:nth-child(2) p:last-child').html($(document).attr('title'));
+		$('.share-href').html(window.location.href);
+		$('.share-tit').html($(document).attr('title'));
 	})
 	// 粘贴
 	$('.alert-share-go').click(function(){
