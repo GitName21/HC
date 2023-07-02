@@ -274,6 +274,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 /* 内容 */
 .note-det-con{color: var(--color000);line-height:23px;padding: 2rem 0;font-size: 0.875rem;font-size: 1rem;color: var(--light-grey);}
 .note-det-con p{margin: 0 0 1rem 0;}
+.note-det-con img{max-width: 100%;height: auto;}
 .note-det-like{border: 2px solid #2A82E4;max-width: 13rem;display: flex;flex-wrap: wrap;justify-content: center;margin: 2rem auto 5rem auto;font-size: 0.875rem;align-items: center;padding: 0.8rem 0;border-radius: 100rem;color: #2A82E4;}
 .note-det-like span{margin: 0 0.2rem;}
 .note-det-like a{display: flex;flex-wrap: wrap;align-items: center;}
