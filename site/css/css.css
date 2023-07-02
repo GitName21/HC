@@ -55,7 +55,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 #modenight,#modeoo{display: flex;flex-wrap: wrap;justify-content: center;}
 
 .navbar-ul{display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;}
-.navbar-ul-left{display: flex;flex-wrap: wrap;justify-content: space-between;width: 65%;align-items: center;}
+.navbar-ul-left{display: flex;flex-wrap: wrap;justify-content: space-between;width: 65%;align-items: center;position: relative;}
 .navbar-ul-left>div{width: 50%;position: relative;}
 .navbar-ul-left div form{justify-content: flex-end;display: flex;flex-wrap: wrap;}
 .navbar-ul-left input[name="search"]{border: 1px solid rgba(0, 0, 0, 0);height: 2.5rem;width: 82%;background-color: var(--bg-color);border-radius: 0.625rem;outline: none;padding: 0 15% 0 3%;right: 0;transition:all var(--transitionTime03) linear;}
@@ -63,7 +63,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .navbar-ul-left input[name="search"]:focus{border: 1px solid #0077FF;}
 .weather{color: var(--color000);}
 .navbar-ul-left input[name="submit"]{height: 2.5rem;width: 2.5rem;position: absolute;right: 1px;top:1px;border-radius: 0.625rem;border: 0;outline: none;background-color: var(--bg-color);background-image: url(../img/icon/search.png);background-size:50%;background-position: 0.6rem 0.6rem;background-repeat: no-repeat;text-align:center;cursor: pointer;}
-.navbar-ul li:last-child{font-size: 0.75rem;line-height: 1.2rem;}
+/* .navbar-ul li:last-child{font-size: 0.75rem;line-height: 1.2rem;} */
 
 /* logo */
 .navbar-left a p{display: flex;flex-wrap: wrap;justify-content: center;}
@@ -215,7 +215,8 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 /* 平面作品页 */
 /* 导航栏 */
 /* pc端菜单 */
-.navbar-ul-left-graphic{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
+.navbar-ul-left-graphic{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;position: relative;}
+.navbar-ul-left-hint{position: absolute;width: 4rem;height: 0.2rem;left: 0;bottom: -1.9rem;background-color: var(--main-color);border-radius: 20px;transition: all 0.3s ease;}
 .navbar-ul-left-graphic div:not(.search-box){width: 10%;}
 .search-box{display: flex;flex-wrap: nowrap;justify-content: flex-end;}
 .search-box form{width: 70%;}

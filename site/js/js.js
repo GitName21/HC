@@ -401,6 +401,41 @@ $(document).ready(function(){
 		$('body').css({"overflow":"scroll"})
 	})
 	
+	// 页面加载完菜单标识条定位
+	// 获取菜单宽度
+	var distance = $('.navbar-ul-left div:not(.search-box)').outerWidth();
+	// var str = ['index', 'graphic', 'details', 'Notes', 'note-details', 'message'];
+	// 截取当前浏览器链接字符串
+	var href = window.location.href;
+	if(href.indexOf("index") >= 0 ) { 
+	    Number_eq = 0;
+	}
+	if(href.indexOf("graphic") >= 0 || href.indexOf("details") >= 0) { 
+	    Number_eq = 1;
+	}
+	if(href.indexOf("Notes") >= 0 ||  href.indexOf("note-details") >= 0) { 
+	    Number_eq = 2;
+	}
+	if(href.indexOf("message") >= 0) { 
+	    Number_eq = 4;
+	}
+	$('.navbar-ul-left-hint').css({"left":distance*Number_eq+'px'})
+	// 窗口缩放实时获取菜单宽度
+	$(window).resize(function(){
+		var distance = $('.navbar-ul-left div:not(.search-box)').outerWidth();
+		$('.navbar-ul-left-hint').css({"left":distance*Number_eq+'px'})
+	})
+	
+	// 导航栏鼠标靠近
+	$('.navbar-ul-left div:not(.search-box) a').hover(function(){
+		
+		// 获取当前鼠标靠近的元素的下标
+		var eq = $(".navbar-ul-left div:not(.search-box) a").index(this)
+		
+		$('.navbar-ul-left-hint').css({"left":distance*eq+'px'})
+	})
+	
+	
 });
 
 
