@@ -440,6 +440,14 @@ $(document).ready(function(){
 		$('.navbar-ul-left-hint').css({"left":distance*Number_eq+'px'})
 	})
 	
+	// 移动端打开留言面板
+	$('.message-record-open').click(function(){
+		$('.message-record').slideDown(300)
+	})
+	$('.message-record>div').click(function(){
+		$('.message-record').slideUp(300)
+	})
+	
 	
 });
 

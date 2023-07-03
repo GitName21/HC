@@ -392,7 +392,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 
 
 /* 留言页 */
-.message-form{width: auto;height: auto;background-color: #fff;background-color: var(--bg-fff);border-radius: var(--radius);padding: 1rem;margin: 0 0 1rem 0;color: var(--color000);}
+.message-form,.message-record{width: auto;height: auto;background-color: #fff;background-color: var(--bg-fff);border-radius: var(--radius);padding: 1rem;margin: 0 0 1rem 0;color: var(--color000);}
 .blog-avatar{display: flex;flex-wrap: nowrap;align-items: center;font-size: 0.75rem;color: var(--light-grey);}
 .blog-avatar div:first-child{width: 1rem;height: 1rem;border-radius: 50%;overflow: hidden;margin: 0 0.5rem 0 0;}
 .blog-avatar div img{width: 100%;height: auto;}
@@ -400,6 +400,10 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 .message-form>p:first-child{font-size: 1.5rem;}
 .message-form>p:last-child{font-size: 0.75rem;}
 .line{border-bottom: 1px solid var(--light-grey);}
+/* 留言记录 */
+.message-record p:first-child span:first-child{font-size: 2rem;}
+.message-record-list{margin: 1rem 0 0 0;}
+.message-record-open{text-align: center;color: var(--main-color);cursor: pointer;display: none;}
 
 
 
@@ -581,6 +585,9 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	
 	/* 留言页 */
 	.message-order{order: 0;}
+	.message-record{position: fixed;bottom: -1rem;height: 65%;width: 80%;box-shadow: 0px -5px 10px #e1e1e1;left: 0;border-top-left-radius: 2rem;border-top-right-radius: 2rem;border-bottom-left-radius: 0;border-bottom-right-radius: 0;padding:10%;display: none;}
+	.message-record-open{display: block;}
+	.message-record>div{width: 4rem;height: 0.5rem;background-color: #d4d4d4;margin: 0 auto 1rem auto;border-radius: 20px;}
 	
 }
 
