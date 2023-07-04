@@ -402,8 +402,10 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 .line{border-bottom: 1px solid var(--light-grey);}
 /* 留言记录 */
 .message-record p:first-child span:first-child{font-size: 2rem;}
-.message-record-list{margin: 1rem 0 0 0;}
+.message-record-list{margin: 1rem 0 0 0;display: flex;flex-wrap: nowrap;justify-content: space-between;}
 .message-record-open{text-align: center;color: var(--main-color);cursor: pointer;display: none;}
+.message-record-list li:first-child{width: 15%;background-color: red;height: auto;}
+.message-record-list li:last-child{width: 80%;}
 
 
 
