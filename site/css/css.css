@@ -550,6 +550,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	/* 平面作品详情展示 */
 	.details-main{width: 96%}
 	.detailsWindow{display: flex;position: absolute;width: 100%;height: 100%;background-color: yellow;color: red;}
+	.details-box{padding-top: 1rem;}
 	
 	
 	/* 笔记详情页 */
