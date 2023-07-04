@@ -445,7 +445,7 @@ $(document).ready(function(){
 		$('.message-record').slideDown(300)
 	})
 	// 移动端关闭留言面板
-	$('.message-record>div').click(function(){
+	$('.message-record-close').click(function(){
 		$('.message-record').slideUp(300)
 	})
 	
