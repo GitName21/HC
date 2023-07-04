@@ -89,7 +89,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .content-top-box>li:last-child{width: 33%;}
 .content-top-left-title{margin-bottom: 1rem;color: var(--color000);}
 .content-top-left-banner{width: 100%;height: 12.5rem;border-radius: 0.625rem;overflow: hidden;}
-.content-top-left-banner>img{width: 100%;max-width: 100%;height: auto;text-align: center;}
+.content-top-left-banner>a>img{width: 100%;max-width: 100%;height: auto;text-align: center;}
 .content-top-right-box{
 	padding: 1.7rem 6%;
 	display: flex;
