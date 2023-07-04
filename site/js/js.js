@@ -444,28 +444,9 @@ $(document).ready(function(){
 	$('.message-record-open').click(function(){
 		$('.message-record').slideDown(300)
 	})
-	$('.message-record>div').mousedown(function(){
-		
-		// 按下时的鼠标坐标
-		var mousedownX = event.pageX;
-		var mousedownY = event.pageY;
-		// alert(mousedownY)
-		// 松开时的鼠标坐标
-		$(document).mouseup(function(event){
-		    var mouseupX = event.pageX;
-		    var mouseupY = event.pageY;
-		    var mouseupY = mouseupY;
-			if(mouseupY == mousedownY){
-				// alert('不动')
-			}
-			if(mouseupY > mousedownY){
-				$('.message-record').slideUp(300)
-			}
-			if(mouseupY < mousedownY){
-				// alert('没有下拉')
-			}
-		});
-		
+	// 移动端关闭留言面板
+	$('.message-record>div').click(function(){
+		$('.message-record').slideUp(300)
 	})
 	
 	
