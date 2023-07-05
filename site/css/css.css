@@ -418,8 +418,8 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	.content-top-left-banner{height: auto;}
 	.content-top-box>li:first-child{display: none;}
 	.content-top-box>li:last-child{width: 100%;}
-	.content-top-right-box{padding: 0.8rem 2.6%;}
-	.content-top-right-box li{width: 23%;margin-bottom: 0rem;}
+	.content-top-right-box{padding: 0;background-color: transparent;}
+	.content-top-right-box li{width: 23%;margin-bottom: 0rem;background-color: var(--colorfff);}
 	
 	.content-top-right-title p:last-child{display: none;}
 	.content-top-right-title{width: 40%;padding: 0 0 0 10%;}
