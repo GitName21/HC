@@ -449,6 +449,16 @@ $(document).ready(function(){
 		$('.message-record').slideUp(300)
 	})
 	
+	// 反馈
+	$('.footer-but li:nth-child(2)').click(function(){
+		// 打开遮罩
+		alertShare();
+		$('.feedback-box').fadeIn(500)
+		
+	})
+	$('.global-Mask').click(function(){
+		$('.feedback-box').fadeOut(500)
+	})
 	
 	
 });
