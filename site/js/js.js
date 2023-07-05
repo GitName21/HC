@@ -449,6 +449,11 @@ $(document).ready(function(){
 		$('.message-record').slideUp(300)
 	})
 	
+	var feedbackBoxWidth= $('.feedback-box').outerWidth();
+	var feedbackBoxHeight= $('.feedback-box').outerHeight();
+	var centerY = ($(window).height()-feedbackBoxHeight)/2;
+	var centerX = ($(window).width()-feedbackBoxWidth)/2;
+	$('.feedback-box').css({"top":centerY,"left":centerX})
 	// 反馈
 	$('.footer-but li:nth-child(2)').click(function(){
 		// 打开遮罩
