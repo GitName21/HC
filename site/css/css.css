@@ -42,6 +42,9 @@ img{border: 0;display: block;margin: 0;padding: 0;}
 	--transitionTime02: 0.2s;
 	/* 列表的出现的过渡 */
 	--transitionList: all var(--transitionTime02) linear;
+	
+	/* 阴影 */
+	--shadow-shallow:#e5e5e5;
 }
 
 /* 全局样式 */
@@ -325,7 +328,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 
 /* 笔记列表页 */
 .notes-list-wrap{background-color: var(--bg-fff);border-radius: var(--radius);padding: 1rem;margin: 0 0 1rem 0;color: var(--color000);}
-.notes-list-wrap:hover{box-shadow:5px 5px 8px #dcdcdc;transition: all 0.2s;}
+.notes-list-wrap:hover{box-shadow:5px 5px 8px var(--shadow-shallow);transition: all 0.2s;}
 .notes-list-wrap p:nth-child(2){margin: 0.8rem 0;color: var(--dark-gray);}
 .notes-list-wrap p:first-child{border-bottom: 1px solid #e8e8e8;padding: 0 0 0.8rem 0;}
 .notes-list-wrap p:nth-child(2),.notes-list-wrap p:last-child{font-size: 0.875rem;}
@@ -600,7 +603,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	
 	/* 留言页 */
 	.message-order{order: 0;}
-	.message-record{position: fixed;bottom: -1rem;height: 65%;width: 80%;box-shadow: 0px -5px 10px #e1e1e1;left: 0;border-top-left-radius: 2rem;border-top-right-radius: 2rem;border-bottom-left-radius: 0;border-bottom-right-radius: 0;padding:10%;display: none;}
+	.message-record{position: fixed;bottom: -1rem;height: 65%;width: 80%;box-shadow: 0px -5px 10px var(--shadow-shallow);left: 0;border-top-left-radius: 2rem;border-top-right-radius: 2rem;border-bottom-left-radius: 0;border-bottom-right-radius: 0;padding:10%;display: none;}
 	.message-record-open{display: block;padding-bottom: 1rem;}
 	.message-record-close{width: 20%;height: 0.3rem;background-color: #d4d4d4;margin: 0 auto 1rem auto;border-radius: 20px;position: absolute;top: 1rem;left: 40%;}
 	.message-record-box{overflow: scroll;height: 100%;}

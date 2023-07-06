@@ -497,6 +497,7 @@ function night(){
 		document.documentElement.style.setProperty('--dark-gray', "#ffffff");
 		document.documentElement.style.setProperty('--bg-fff', "#1d1d1d");
 		document.documentElement.style.setProperty('--color000', "#ffffff");
+		document.documentElement.style.setProperty('--shadow-shallow', "#2f2f2f");
 		
 		// alert('已开启深色模式');
 		
@@ -525,6 +526,7 @@ if(mode == 'night'){
 	document.documentElement.style.setProperty('--dark-gray', "#ffffff");
 	document.documentElement.style.setProperty('--bg-fff', "#1d1d1d");
 	document.documentElement.style.setProperty('--color000', "#ffffff");
+	document.documentElement.style.setProperty('--shadow-shallow', "#2f2f2f");
 	
 	modenight.style.setProperty('display', "none");
 	modeoo.style.setProperty('display', "flex");
@@ -553,6 +555,7 @@ function daytime(){
 	document.documentElement.style.setProperty('--dark-gray', "#383838");
 	document.documentElement.style.setProperty('--bg-fff', "#ffffff");
 	document.documentElement.style.setProperty('--color000', "#000000");
+	document.documentElement.style.setProperty('--shadow-shallow', "#e5e5e5");
 	
 	// alert('已关闭深色模式');
 	
