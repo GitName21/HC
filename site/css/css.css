@@ -506,7 +506,8 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	.navbar-mobile-ul input[name="submit-mobile"]{width: ;height: 2rem;border: 0;outline: none;position: absolute;top: 0;right: 0;padding: 0 3%;background-color: #e7e7e7;}
 	/* 二级设置菜单 */
 	.navbar-mobile-set{width: 90%;display: none;}
-	.navbar-mobile-set li{width: 100%;margin: 1rem 0 0 1.5rem;height: auto;}
+	.navbar-mobile-set li{width: 100%;margin: 1rem 0 0 1.5rem;height: auto;display: flex;align-items: center;}
+	.navbar-mobile-set li svg{margin: 0 0.3rem 0 0;width: 1rem;height: 1rem;}
 	.navbar-mobile-set-btn{width: 100%;}
 	
 	/* 平面作品更多按钮 */
