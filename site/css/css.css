@@ -411,10 +411,10 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 
 /* 反馈 */
 .feedback-box{position: fixed;top: 0;left: 0;display: none;width: 20rem;height: auto;}
-.feedback-box textarea{width: 89%;border: 0;border-radius: 0.5rem;border: 0;resize: none;padding: 5%;color: var(--light-grey);background-color: var(--bg-fff);}
+.feedback-box textarea{width: 95%;border: 0;border-radius: 0.5rem;border: none;resize: none;padding: 5% 2%;color: var(--light-grey);background-color: var(--bg-fff);display: block;}
 .feedback-box input{height: 2.5rem;border-radius: 0.5rem;border: 0;background-color: var(--bg-fff);}
 .feedback-box>div>div:first-child{color: #fff;font-size: 2rem;text-align: center;margin-bottom:1rem;}
-.feedback-box form p{margin:0 0 0.5rem 0;}
+.feedback-box form p{margin:0 0 1rem 0;}
 .feedback-box form p input[type="submit"]{width: 100%;color: var(--color000);}
 .feedback-box form p input[type="text"]{width: 96%;padding: 0 2%;}
 
