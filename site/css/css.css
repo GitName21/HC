@@ -552,7 +552,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	/* 平面作品页 */
 	/* 平面作品列表 */
 	.graphic-list-box li{width: 100%;}
-	.graphic-list-box .graphic-list-tit{position: relative;background: var(--bg-fff);color: var(--color000);opacity: 1;padding-top: 0;line-height:5rem;height: 5rem;}
+	.graphic-list-box .graphic-list-tit{position: relative;background: var(--bg-fff);color: var(--color000);opacity: 1;padding-top: 0;line-height:4rem;height: 4rem;}
 	/* 推荐 */
 	.recommend-3d{margin: 1rem 0 0 0;}
 	.recommend-3d-ul li{width: 100%;}
