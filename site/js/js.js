@@ -6,9 +6,10 @@ $(document).ready(function(){
 		// $(".navbar-more").toggleClass("navbar-open");
 		
 		if($(".navbar-more").is(".navbar-open")){
+			$(".navbar-more").addClass("navbar-close");
 			$(".navbar-more").removeClass("navbar-open");
 			// $(".navbar-more").addClass("navbar-close");
-			$('.navbar-more div').show();
+			$('.navbar-more div').show(200);
 			// 取消遮罩
 			$(".mask").hide(200,function(){
 				$(".navbar-mobile").animate({opacity:'0'},200)
@@ -16,6 +17,7 @@ $(document).ready(function(){
 			$(document).unbind("scroll.unable"); 
 		}else{
 			$(".navbar-more").addClass("navbar-open");
+			$(".navbar-more").removeClass("navbar-close");
 			$('.navbar-more div').hide();
 			// 打开遮罩
 			$(".mask").show(200,function(){
@@ -26,7 +28,7 @@ $(document).ready(function(){
 			$(document).on('scroll.unable',function (e) {
 				$(document).scrollTop(top);
 			})
-		};
+		}
 		
 	});
 	

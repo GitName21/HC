@@ -457,14 +457,14 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 		transition: all 0.3s;
 		transform: rotate(45deg);
 		transform-origin:center;
-		bottom: 0.7rem;
+		bottom: 0.5rem;
 	}
 	.navbar-open::after{
 		background-color: #0077FF;
 		transition: all 0.3s;
 		transform: rotate(-45deg);
 		transform-origin:center;
-		bottom: 0.7rem;
+		bottom: 0.5rem;
 	}
 	.navbar-close::before{
 		background-color: #A6A6A6;
