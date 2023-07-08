@@ -232,7 +232,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .now-color-title{color: var(--dark-gray);font-weight: 900;}
 .graphic-list-box li{width: 32.5%;border-radius: var(--radius);overflow: hidden;position: relative;margin: 0 0 1rem 0;}
 .graphic-list-box li img{width: 100%;height: auto;}
-.graphic-list-tit{position: absolute;bottom: 0;text-align: center;width: 100%;height:  2.625rem;background: var(--list-gradual-bg);padding-top: 3rem;color: var(--colorfff);opacity: 0;}
+.graphic-list-tit{position: absolute;bottom: 0;text-align: center;width: 90%;height:  2.625rem;background: var(--list-gradual-bg);padding-top: 3rem;color: var(--colorfff);opacity: 0;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 5%;}
 /* 推荐 */
 .recommend-3d>div{width: 100%;}
 .recommend-3d-ul{display: flex;width: 100%;flex-wrap: wrap;justify-content: space-between;}
@@ -552,6 +552,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	/* 平面作品页 */
 	/* 平面作品列表 */
 	.graphic-list-box li{width: 100%;}
+	.graphic-list-box .graphic-list-tit{position: relative;background: var(--bg-fff);color: var(--color000);opacity: 1;padding-top: 0;line-height:5rem;height: 5rem;}
 	/* 推荐 */
 	.recommend-3d{margin: 1rem 0 0 0;}
 	.recommend-3d-ul li{width: 100%;}
