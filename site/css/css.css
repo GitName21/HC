@@ -628,7 +628,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	/* 导航栏 */
 	.navbar-box{justify-content: space-between;}
 	.navbar-middle{display: none;}
-	.navbar-left{width: 30%;}
+	.navbar-left{width: 20%;}
 	.navbar-right{width: 20%;}
 	.navbar-right div:not(.navbar-more){display: none;}
 	.navbar-more{display: flex;}
