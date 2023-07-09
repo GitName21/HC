@@ -11,6 +11,7 @@ $(document).ready(function(){
 			$('.navbar-more div').show(200);
 			
 			$('.global-Mask').fadeOut(300)
+			$('.navbar-mobile').fadeOut(0)
 			$('.navbar-mobile').css({'transform':'translateX(100%)'})
 			$('.content-box').css({'transform':'translateX(0)','transition':'all 0.3s ease'})
 			$('.navbar-left').css({'transform':'translateX(0)','transition':'all 0.3s ease'})
@@ -21,7 +22,9 @@ $(document).ready(function(){
 			$(".navbar-more").removeClass("navbar-close");
 			$('.navbar-more div').hide();
 			
+			$(document).scrollTop(0);
 			$('.global-Mask').fadeIn(300)
+			$('.navbar-mobile').fadeIn(0)
 			$('.mask').css({'display':'flex'})
 			$('.navbar-mobile').css({'transform':'translateX(0)'})
 			$('.content-box').css({'transform':'translateX(-85%)','transition':'all 0.3s ease'})
