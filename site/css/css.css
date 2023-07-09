@@ -113,14 +113,16 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
+	justify-content: space-between;
 	}
+.content-top-right-box li a div{display: flex;align-items: center;}	
 /* 导航图标 */
-.content-top-right-img{text-align: center;line-height: 3.8rem;width: 40%;}
-.content-top-right-box li div{padding-top: 0.7rem;}
+.content-top-right-img{text-align: center;line-height: 3.8rem;width: 20%;}
+/* .content-top-right-box li div{padding-top: 0.7rem;} */
 .content-top-right-box a{display: inline-flex;}		/*如果加入A标签后，A标签下的元素没发生小flex，则可以为该A标签添加inline-flex或者flex;也就是如果要a标签跟随flex*/
-.content-top-right-title{background-color: ;width: 50%;padding: 0 0 0 10%;}
-.content-top-right-title p:first-child{font-size: 0.875rem;color: #808080;}
-.content-top-right-title p:last-child:not(.about-english){font-size: 1.125rem;font-weight: bold;color: var(--color000);}
+.content-top-right-title{width: 50%;padding: 0 0 0 10%;display: flex;flex-wrap: wrap;}
+.content-top-right-title p:first-child{font-size: 0.875rem;color: #808080;width: 100%;}
+.content-top-right-title p:last-child:not(.about-english){font-size: 1.125rem;font-weight: bold;color: var(--color000);width: 100%;}
 .about-english{color: var(--color000);font-size: 1.125rem;font-weight: bold;}
 
 
@@ -426,10 +428,10 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	.content-top-box li{width: 100%;margin-bottom: 2rem;}
 	.content-top-left-banner{height: auto;}
 	.content-top-right-box{padding: 0;background-color: transparent;}
-	.content-top-right-box li{width: 49%;margin-bottom: 0rem;background-color: var(--colorfff);padding: 0.5rem 0;margin: 0 0 1rem 0;}
+	.content-top-right-box li{width: 40%;margin-bottom: 0rem;background-color: var(--colorfff);padding: 1rem 1rem;margin: 0 0 0.6rem 0;}
 	
 	/* .content-top-right-title p:last-child{display: none;} */
-	.content-top-right-title{width: 40%;padding: 0 0 0 10%;}
+	.content-top-right-title{width: 40%;padding: 0;}
 	
 	/* 导航栏 */
 	.navbar-box{justify-content: space-between;padding: 1rem;width: auto;}
