@@ -241,7 +241,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .now-color-title{color: var(--dark-gray);font-weight: 900;}
 .graphic-list-box li{width: 32.5%;border-radius: var(--radius);overflow: hidden;position: relative;margin: 0 0 1rem 0;}
 .graphic-list-box li img{width: 100%;height: auto;}
-.graphic-list-tit{position: absolute;bottom: 0;text-align: center;width: 90%;height:  2.625rem;background: var(--list-gradual-bg);padding-top: 3rem;color: var(--colorfff);opacity: 0;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding: 0 5%;}
+.graphic-list-tit{position: absolute;bottom: 0;text-align: center;width: 90%;height:  100%;background: rgba(0, 0, 0, 0.5);color: var(--colorfff);opacity: 0;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;padding:0 5%;display: flex;justify-content: center;align-items: center;}
 /* 推荐 */
 .recommend-3d>div{width: 100%;}
 .recommend-3d-ul{display: flex;width: 100%;flex-wrap: wrap;justify-content: space-between;}
