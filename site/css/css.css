@@ -234,7 +234,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .search-box form{width: 70%;}
 /* 列表 */
 .graphic-list-box{width: 100%;display: flex;flex-wrap: wrap;justify-content: space-between;}
-.graphic-list-title{font-size: 0.875rem;color: var(--medium-grey);}
+.graphic-list-title{font-size: 1.375rem;color: var(--medium-grey);}
 .graphic-list-title span a{display: inline;}
 .graphic-list-title span{margin: 0 2% 0 0;}
 .now-color-title{color: var(--dark-gray);font-weight: 900;}
@@ -434,7 +434,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 /* 超小屏幕（手机，小于 768px） */
 @media (max-width: 767px) {
 	.content-box{width: 96%;margin: 2rem auto 0 auto;}
-	.content-top-box li{width: 100%;margin-bottom: 2rem;}
+	.content-top-box li{width: 100%;}
 	.content-top-left-banner{height: auto;}
 	.content-top-right-box{padding: 0;background-color: transparent;}
 	.content-top-right-box li{width: 40%;margin-bottom: 0rem;background-color: var(--colorfff);padding: 1rem 1rem;margin: 0 0 0.6rem 0;}
@@ -531,11 +531,12 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	.plane-box{width: 100%;margin:0 auto;}
 	.plane-box li{width: 100%;}
 	.plane-box>li:last-child{display: none;}
-	.plane-title{margin: 0 0 1rem 0;padding: 0 0 0 0.5rem;}
+	.plane-title{margin: 2rem 0 1rem 0;padding: 0 0 0 0.5rem;}
 	.plane-left>div{width: 100%;}
 	.plane-left>div:nth-of-type(3){ order:99;}
 	.plane-prompt-bottom{text-align: center;margin-right: 0rem;}
 	.plane-prompt-bottom>a{width: inherit;}
+	.graphic-list-title-describe{font-size: 0.875rem;}
 	
 	/* 三维作品 */
 	/* 三维列表 */
