@@ -170,6 +170,11 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 /* 标题 */
 .plane-left-title{position: absolute;bottom: 0;height: 2.625rem;width: 100%;text-align:center;background: linear-gradient(to bottom, rgba(0,113,242,0.0), rgba(0,113,242,0.8),rgba(0,113,242,1));color: #ffffff;padding-top: 3rem;opacity: 0;}
 
+/* 首页更多按钮 */
+.more-index{display: flex;flex-wrap: nowrap;justify-content: center;margin: 3rem 0 0 0;}
+.more-index li:first-child{width: 16rem;height: 3.5rem;background-color: #2e54ff;color: var(--colorfff);text-align: center;line-height: 3.5rem;border-radius: 10rem;letter-spacing: 0rem;}
+.more-index li:last-child{width: 3.5rem;height: 3.5rem;background-color: #d7e7ff;color: var(--color000);text-align: center;line-height: 3.5rem;border-radius:50%;margin: 0 0 0 1rem;}
+
 /* 三维作品 */
 .three-box{
 	display: flex;display: -ms-flexbox;display: -webkit-flex;display: -moz-box;
@@ -516,6 +521,11 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	.plane-prompt-bottom img{display: none;}
 	.plane-prompt-bottom a{width: auto;height: auto;justify-content: center;text-align: center;display: flex;flex-wrap: nowrap;}
 	.plane-prompt-bottom .plane-more{width: 100%;background-color: #0077FF;height: 2.5rem;line-height: 2.5rem;border-radius: 0.625rem;color: #ffffff;margin: 1rem 0 0 0;}
+	
+	/* 首页更多按钮 */
+	.more-index{margin: 1rem 0 0 0;}
+	.more-index li:first-child{}
+	.more-index li:last-child{display: none;}
 	
 	/* 平面作品 */
 	.plane-box{width: 100%;margin:0 auto;}
