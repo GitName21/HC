@@ -531,7 +531,7 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	.plane-box{width: 100%;margin:0 auto;}
 	.plane-box li{width: 100%;}
 	.plane-box>li:last-child{display: none;}
-	.plane-title{margin: 0 0 1rem 0;}
+	.plane-title{margin: 0 0 1rem 0;padding: 0 0 0 0.5rem;}
 	.plane-left>div{width: 100%;}
 	.plane-left>div:nth-of-type(3){ order:99;}
 	.plane-prompt-bottom{text-align: center;margin-right: 0rem;}
