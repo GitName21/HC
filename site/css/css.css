@@ -131,7 +131,14 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 
 .news-note-line{width: 100%;height: auto;justify-content: space-between;display: flex;margin: 0 0 1rem 0;}
 .news-note-line li{width: 32.5%;height: 0.2rem;background-color: #2A82E4;}
-
+/* 最新笔记列表 */
+.news-note-ul{width: 100%;height: auto;justify-content: space-between;display: flex;background-color: gainsboro;flex-wrap: wrap;}
+.news-note-ul li{width: 49.5%;height: auto;background-color: #383838;position: relative;}
+.news-note-ul li:first-child img{width: 100%;height: auto;}
+.news-note-left{position: absolute;top: 0;left: 0;display: flex;flex-wrap: wrap;align-items: center;justify-content: center;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);}
+.news-note-left p{text-align: center;color: var(--colorfff);margin: 0.5rem 0;padding: 0.5rem 0;width: auto;}
+.news-note-left p:first-child{font-size: 2rem;}
+.news-note-left p:last-child{border: 1px solid #fff;}
 
 /* 平面作品 */
 .plane-box{
@@ -531,6 +538,9 @@ input[name="message-reset"],input[name="message-submit"]{width: 49%;height: 2.81
 	.more-index{margin: 1rem 0 0 0;}
 	.more-index li:first-child{}
 	.more-index li:last-child{display: none;}
+	
+	/* 最新笔记列表 */
+	.news-note-ul li{width: 100%;}
 	
 	/* 平面作品 */
 	.plane-box{width: 100%;margin:0 auto;}
