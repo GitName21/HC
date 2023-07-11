@@ -133,12 +133,18 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .news-note-line li{width: 32.5%;height: 0.2rem;background-color: #2A82E4;}
 /* 最新笔记列表 */
 .news-note-ul{width: 100%;height: auto;justify-content: space-between;display: flex;background-color: gainsboro;flex-wrap: wrap;}
-.news-note-ul li{width: 49.5%;height: auto;background-color: #383838;position: relative;}
-.news-note-ul li:first-child img{width: 100%;height: auto;}
+.news-note-ul>li{width: 49.5%;height: auto;background-color: #383838;position: relative;}
+.news-note-ul>li:first-child img{width: 100%;height: auto;}
 .news-note-left{position: absolute;top: 0;left: 0;display: flex;flex-wrap: wrap;align-items: center;justify-content: center;width: 100%;height: 100%;background-color: rgba(0, 0, 0, 0.7);}
 .news-note-left p{text-align: center;color: var(--colorfff);margin: 0.5rem 0;padding: 0.5rem 0;width: auto;}
 .news-note-left p:first-child{font-size: 2rem;}
 .news-note-left p:last-child{border: 1px solid #fff;}
+.news-note-left::before{position: absolute;bottom: 0;left: 0;content: '专题';background-color: red;width: 4rem;height: 2rem;color: #fff;text-align: center;line-height: 2rem;}
+/* 列表 */
+.news-note-list{width: 100%;height: auto;display: flex;flex-wrap: nowrap;justify-content: space-between;}
+.news-note-list li:first-child{width: 20rem;height: auto;}
+.news-note-list li:first-child img{width:100%;height: auto;}
+.news-note-list li:last-child p:first-child{font-size: 2rem;}
 
 /* 平面作品 */
 .plane-box{
