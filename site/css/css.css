@@ -129,6 +129,9 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .content-top-right-title p:last-child:not(.about-english){font-size: 1.125rem;font-weight: bold;color: var(--colorfff);width: 100%;}
 .about-english{color: var(--colorfff);font-size: 1.125rem;font-weight: bold;}
 
+.news-note-line{width: 100%;height: auto;justify-content: space-between;display: flex;margin: 0 0 1rem 0;}
+.news-note-line li{width: 32.5%;height: 0.2rem;background-color: #2A82E4;}
+
 
 /* 平面作品 */
 .plane-box{
