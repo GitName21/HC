@@ -140,7 +140,7 @@ body{background: var(--bg-color);transition: var(--transitionTime05) ease-in;}
 .news-note-left p{text-align: center;color: var(--colorfff);margin: 0;padding: 0.5rem 0;width: auto;width: 100%;}
 .news-note-left p:first-child{font-size: 2rem;}
 .news-note-left p:last-child{border: 1px solid #fff;width: 8rem;margin: 1rem 0 0 0;}
-.news-note-left::before{position: absolute;bottom: 0;left: 0;content: '专题';width: 5rem;height: 1.8rem;color: #fff;text-align: center;line-height: 1.8rem;background-color: #e62129;}
+.news-note-left::before{position: absolute;bottom: 0;left: 0;content: '置顶';width: 5rem;height: 1.8rem;color: #fff;text-align: center;line-height: 1.8rem;background-color: #e62129;}
 /* 列表 */
 .news-note-list{width: 100%;height: auto;display: flex;flex-wrap: nowrap;justify-content: space-between;background-color: var(--bg-fff);padding: 0.5rem;width: auto;}
 .news-note-list li:first-child{width:22%;height: auto;}
